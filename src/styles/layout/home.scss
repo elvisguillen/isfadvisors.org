@@ -1,0 +1,105 @@
+.hero {
+    height: -webkit-calc(100vh - 100px);
+    height:    -moz-calc(100vh - 100px);
+    height:         calc(100vh - 100px);
+    width: 100%;
+    background: url('../images/hero.jpg') no-repeat;
+    background-size: cover;
+    padding: $mobile-gutter;
+
+    span {
+        background-color: $light-blue;
+        font-size: 32px;
+        line-height: 1.6;
+    }
+}
+
+.intro {
+    background-color: $tan;
+    padding: $mobile-gutter*2 $mobile-gutter+10;
+
+    p {
+        font-size: 24px;
+    }
+
+    .intro_photo {
+        padding-left: -15px;
+        padding-right: -15px;
+    }
+}
+
+.rural-farmers {
+    background-color: $light-green;
+    padding: $mobile-gutter*2 0px;
+    
+    h1 {
+        margin-bottom: $mobile-gutter;
+    }
+
+    span {
+        background-color: $brand-green;
+        font-size: 32px;
+        line-height: 1.5;
+        color: $tan;
+    }
+
+    .rural-farmers-reasons {
+        background-color: white;
+        padding: $mobile-gutter;
+        text-align: center;
+        color: $brand-green;
+        
+        .reason {
+            margin-bottom: $mobile-gutter - 10px;
+            &::after {
+                content: '+';
+                color: $brand-green;
+                text-align: center;
+                font-size: 35px;
+                font-family: $circular-black;
+            }
+
+            &:last-of-type::after {
+                display: none;
+            }
+        }
+        p {
+            color: $brand-green;
+            font-size: 24px;
+        }
+    }
+}
+
+.case-studies {
+    background-color: $lighter-green;
+    color: white;
+
+    .case-study-copy {
+        padding: $mobile-gutter*2 $mobile-gutter+10;
+        
+        h3 {
+            font-family: $circular-book!important;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+    }
+}
+
+.cta {
+    background-color: $tan;
+    padding: $mobile-gutter*2 $mobile-gutter+10;
+    p {
+        font-size: 24px;
+
+        a {
+            color: $black;
+            border-bottom: 2px solid $black;
+            padding-bottom: 2px;
+        }
+        
+    }
+}

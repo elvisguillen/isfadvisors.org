@@ -1,0 +1,47 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $circular-black;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: $circular-book;
+    font-size: 18px;
+    color: $black;
+    letter-spacing: 1px;
+}
+
+button {
+    font-family: $circular-black;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 15px 45px;
+    border: 3px solid $black;
+    margin-top: $mobile-gutter;
+
+    &.white {
+        border: 2px solid white;
+        color: white;
+    }
+}
+
+footer {
+    background-color: $black;
+    height: auto;
+    padding: $mobile-gutter;
+
+    p {
+        color: white;
+        font-size: 15px;
+    }
+
+    a {
+        color: white;
+        border-bottom: 2px solid white;
+    }
+}
