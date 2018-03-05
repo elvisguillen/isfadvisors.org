@@ -1,21 +1,21 @@
 import React from 'react'
 import { Container, Col, Row } from 'reactstrap'
-import Fade from 'react-reveal/Fade'
+import Reveal from 'react-reveal/Reveal'
 
 const PageAltContent = (props) => (
     <section className='rural-farmers'>
       <Container>
         <Col lg={{size: 6, offset: 3}} >
-          <Fade bottom>
+          <Reveal effect='fadeInUp'>
             <h1 className='text-center'><span>{props.title}</span></h1>
-          </Fade>
+          </Reveal>
         </Col>
         <div className='rural-farmers-reasons'> 
-          <Fade bottom>
+          <Reveal effect='fadeInUp'>
             <Row>
               {props.children}
             </Row>
-          </Fade>
+          </Reveal>
         </div>
       </Container>
     </section>
