@@ -1,0 +1,149 @@
+@include media-breakpoint-up(xs) {
+    .main-header {
+        height: 110px;
+    
+        .brand {
+            padding-top: 30px;
+            img {
+                width: 207px;
+            }
+        }
+    }
+ }
+@include media-breakpoint-up(sm) { 
+
+}
+@include media-breakpoint-up(md) { }
+@include media-breakpoint-up(lg) {
+    .hero {
+        height: -webkit-calc(100vh - 110px);
+        height:    -moz-calc(100vh - 110px);
+        height:         calc(100vh - 110px);
+        h1 {
+            padding: 80px 50px;
+            span {
+                font-size: 46px;
+                padding: 10px;
+            }
+        }
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .main-header {
+        z-index: 100000;
+        position: relative;
+
+        .main-nav {
+            .nav-item {
+                padding-left: 10px;
+                padding-right: 10px;
+                &:first-of-type {
+                    padding-left: 40px;
+                }
+                &:last-of-type {
+                    padding-right: 39px;
+                }
+            }
+        }
+    }
+
+    .intro {
+        padding: $gutter*2 0px;
+        height: 620px;
+    }
+
+    .rural-farmers {
+        padding: $gutter*2+20 0px;
+
+        .reason {
+            padding: 40px 50px;
+            &::after {
+                position: absolute;
+                right: -15px;
+                top: 80px;
+            }
+        }
+    }
+
+    .case-studies {
+        .case-study {
+            padding-left:0px;
+            padding-right: 0px;
+            .case-study-copy {
+                padding: $gutter - 20 $gutter;
+            }
+        }
+    }
+    .bm-menu-wrap {
+        width: 40%!important;
+    }
+
+    .page-hero {
+        padding: $gutter*2 - 30 $gutter/2 - 20px;
+    }
+
+    .page-content {
+        padding: $gutter*2 0px;
+
+        .page-content-left {
+            border-right: 3px solid $black;            
+            order: 1;
+        }
+
+        .page-content-right {
+            order: 2;
+        }
+    }
+
+    .team-right {
+        margin-top: 0px;
+    }
+}
+@include media-breakpoint-up(xl) { 
+    
+
+    .main-header {
+        height: 148px;
+    
+        .brand {
+            padding-top: 42px;
+            img {
+                width: 266px;
+            }
+        }
+
+        .main-nav {
+            .nav-item {
+                padding-left: 25px;
+                padding-right: 25px;
+                &:first-of-type {
+                    padding-left: 54px;
+                }
+                &:last-of-type {
+                    padding-right: 54px;
+                }
+            }
+        }
+    }
+
+    .hero {
+        height: 720px;
+        h1 {
+            padding: 80px 180px;
+            span {
+                font-size: 46px;
+            }
+        }
+    }
+
+    .rural-farmers {
+        .rural-farmers-reasons {
+            .reason {
+                padding: 40px 73px;
+            }
+        }
+    }
+}

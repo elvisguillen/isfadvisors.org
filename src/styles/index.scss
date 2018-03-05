@@ -59,11 +59,16 @@
 // GLOBAL //
 
 @import "./global/global.scss";
+@import "./global/forms.scss";
+@import "./global/map.scss";
+@import "./global/animation.scss";
 
 // LAYOUT //
 
 @import "./layout/header.scss";
 @import "./layout/home.scss";
+@import "./layout/page.scss";
+@import "./layout/team-member.scss";
 
 // RESPONSIVE //
 

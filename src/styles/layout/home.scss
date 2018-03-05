@@ -7,16 +7,23 @@
     background-size: cover;
     padding: $mobile-gutter;
 
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
     span {
         background-color: $light-blue;
         font-size: 32px;
-        line-height: 1.6;
+        padding: 7px;
+        line-height: 1.9;
+        color: $copy-green;
     }
 }
 
 .intro {
     background-color: $tan;
-    padding: $mobile-gutter*2 $mobile-gutter+10;
+    padding: $mobile-gutter*2 $mobile-gutter - 10;
 
     p {
         font-size: 24px;
@@ -39,24 +46,26 @@
     span {
         background-color: $brand-green;
         font-size: 32px;
-        line-height: 1.5;
+        line-height: 1.9;
+        padding: 7px;
         color: $tan;
     }
 
     .rural-farmers-reasons {
         background-color: white;
-        padding: $mobile-gutter;
-        text-align: center;
+        padding: $mobile-gutter*2 $mobile-gutter*2;
         color: $brand-green;
         
         .reason {
             margin-bottom: $mobile-gutter - 10px;
+            padding: 0px 20px;
             &::after {
                 content: '+';
-                color: $brand-green;
+                color: $lighter-green;
                 text-align: center;
-                font-size: 35px;
-                font-family: $circular-black;
+                font-size: 70px;
+                font-family: "Circular Air ";
+                font-weight: 100;
             }
 
             &:last-of-type::after {
@@ -71,27 +80,112 @@
 }
 
 .case-studies {
-    background-color: $lighter-green;
+    height: -webkit-calc(100vh);
+    height:    -moz-calc(100vh);
+    height:         calc(100vh);
     color: white;
+    display: flex;
 
-    .case-study-copy {
-        padding: $mobile-gutter*2 $mobile-gutter+10;
+    .case-study {
+        cursor: pointer;
+
+        &.full-height {
+            height: -webkit-calc(100vh);
+            height:    -moz-calc(100vh);
+            height:         calc(100vh);
+            overflow: hidden;
+            
+            .case-study-image {
+                display: flex;
+                transition: all 500ms ease-in-out;
+
+                img {
+                    object-fit: cover;
+                    height: -webkit-calc(100vh);
+                    height:    -moz-calc(100vh);
+                    height:         calc(100vh);
+                    width: 100%;
+                    transition: all 500ms ease-in-out;
+                }
+            }
+        }
+
+        &.tall-height {
+            height: -webkit-calc(60vh);
+            height:    -moz-calc(60vh);
+            height:         calc(60vh);
+            overflow: hidden;
+        }
+
+        &.small-height {
+            height: -webkit-calc(40vh);
+            height:    -moz-calc(40vh);
+            height:         calc(40vh);
+            overflow: hidden;
+            .case-study-image {
+                display: flex;
+                height: 100%;
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+
+            &:hover {
+                height: -webkit-calc(100vh);
+                height:    -moz-calc(100vh);
+                height:         calc(100vh);
+            }
+        }
+
+        &.full-height:hover {
+            img {
+                height: -webkit-calc(60vh);
+                height:    -moz-calc(60vh);
+                height:         calc(60vh);
+                transition: all 500ms ease-in-out;
+            }
+            .case-study-copy {
+                transition: all 500ms ease-in-out;
+                height: -webkit-calc(40vh);
+                height:    -moz-calc(40vh);
+                height:         calc(40vh);
+                bottom: 0;
+            }
+        }
+
+        .case-study-copy {
+            padding: $mobile-gutter*2 $mobile-gutter;
+            position: absolute;
+            bottom: 0px;
+            background-color: $lighter-green;
+            left: 0px;
+            width: 100%;
+            height: -webkit-calc(40vh);
+            height:    -moz-calc(40vh);
+            height:         calc(40vh);
+            transition: all 500ms ease-in-out;
+            bottom: -40vh;
         
-        h3 {
-            font-family: $circular-book!important;
-            margin-bottom: 20px;
+            h3 {
+                font-family: $circular-book!important;
+                margin-bottom: 20px;
+            }
+    
+            h4 {
+                text-transform: uppercase;
+                font-size: 18px;
+            }
         }
-
-        h4 {
-            text-transform: uppercase;
-            font-size: 18px;
-        }
+        
     }
+
 }
 
 .cta {
     background-color: $tan;
-    padding: $mobile-gutter*2 $mobile-gutter+10;
+    padding: $gutter*1.5 $mobile-gutter - 10;
     p {
         font-size: 24px;
 

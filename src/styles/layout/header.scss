@@ -3,7 +3,87 @@
     height: 100px;
 
     .brand {
-        width: 45%;
+        width: 181px;
         padding-top: 28px;
+    }
+}
+
+.main-nav {
+    border: 3px solid $black;
+    height: 66px;
+    margin-top: 40px;
+    background-color: $black;
+    padding: 0px;
+
+    .nav-item {
+        font-family: $circular-black;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-right: 44px;
+        height: 100%;
+        display: block;
+        background-color: $tan;
+        position: relative;
+        transition: all 500ms ease-in-out;
+        
+        &::before {
+            background: none;
+            border-left: 40px solid transparent;
+            border-right: 0px solid transparent;
+            border-top: 60px solid $tan;
+            content: "";
+            left: -40px;
+            position: absolute;
+            top: 0;
+            transition: all 500ms ease-in-out;
+        }
+        
+        &::after {
+            border-left: 0px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 60px solid $tan;
+            content: "";
+            height: 0;
+            position: absolute;
+            right: -40px;
+            top: 0;
+            width: 0;
+            transition: all 500ms ease-in-out;
+        }
+
+        &:first-of-type {
+            padding-left: 54px;
+            &::before {
+                display: none;
+            }
+        }
+        &:last-of-type {
+            padding-right: 54px;
+            margin-right: 0px!important;
+
+            &::after {
+                display: none;
+            }
+        }
+        
+        a {
+            color: $black;
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+        &:hover {
+            background-color: $light-blue;
+            
+            &::before {
+                border-top-color: $light-blue;
+            }
+            &::after {
+                border-bottom-color: $light-blue;
+            }
+        }
     }
 }

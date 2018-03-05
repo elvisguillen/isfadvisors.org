@@ -1,0 +1,65 @@
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0);
+        opacity: 0
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@keyframes fadeInUp-delayed {
+    from {
+        transform: translate3d(0,40px,0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.fadeInUp-delayed {
+    opacity: 0;
+    animation-delay: 1000ms;
+    animation-name: fadeInUp-delayed;
+    -webkit-animation-name: fadeInUp-delayed;
+}
+
+.fadeInUp {
+    .reason, .case-study {
+        opacity: 0;
+        @for $i from 1 through 3 {
+            &:nth-child(#{$i}) {
+            animation-delay: 200ms * $i;
+            animation-name: fadeInUp;
+            animation-timing-function: ease-in-out;
+            animation-duration: 1000ms;
+            animation-fill-mode: forwards;
+            }
+        }
+    }
+
+    .team-member {
+        opacity: 0;
+        @for $i from 1 through 9 {
+            &:nth-child(#{$i}) {
+            animation-delay: 200ms * $i;
+            animation-name: fadeInUp;
+            animation-timing-function: ease-in-out;
+            animation-duration: 1000ms;
+            animation-fill-mode: forwards;
+            }
+        }
+    }
+}
