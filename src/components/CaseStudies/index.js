@@ -1,14 +1,7 @@
 import React, {Component} from 'react'
 import Link from 'gatsby-link'
 import { Container, Row, Col, Card, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap'
-
-const isServer = typeof window === 'undefined'
-  
-if (isServer) {
-    null
-} else {
-    import Reveal from 'react-reveal/Reveal'
-}
+import Fade from 'react-reveal/Fade'
 
 import photo_case_studies from '../../images/photo_case_studies.jpg'
 import photo_case_studies2 from '../../images/photo_case_studies2.jpg'
@@ -16,7 +9,7 @@ import photo_case_studies3 from '../../images/photo_case_studies3.jpg'
 import photo_case_studies4 from '../../images/photo_case_studies4.jpg'
 
 const CaseStudies = () => (
-    <Reveal effect='fadeInUp'>
+    <Fade bottom>
         <section className='case-studies'>
                 <Row>
                     <Col className='case-study full-height' xs={{size: 12}} lg={{size: 6}} >
@@ -55,7 +48,7 @@ const CaseStudies = () => (
                     </Col>
                 </Row>
         </section>
-    </Reveal>
+    </Fade>
 )
 
 export default CaseStudies

@@ -1,28 +1,21 @@
 import React from 'react'
 import { Container, Col, Row } from 'reactstrap'
-
-const isServer = typeof window === 'undefined'
-  
-if (isServer) {
-    null
-} else {
-    import Reveal from 'react-reveal/Reveal'
-}
+import Fade from 'react-reveal/Fade'
 
 const PageAltContent = (props) => (
     <section className='rural-farmers'>
       <Container>
         <Col lg={{size: 6, offset: 3}} >
-          <Reveal effect='fadeInUp'>
+          <Fade bottom>
             <h1 className='text-center'><span>{props.title}</span></h1>
-          </Reveal>
+          </Fade>
         </Col>
         <div className='rural-farmers-reasons'> 
-          <Reveal effect='fadeInUp'>
+          <Fade bottom>
             <Row>
               {props.children}
             </Row>
-          </Reveal>
+          </Fade>
         </div>
       </Container>
     </section>
