@@ -4,6 +4,13 @@ import { Container, Row, Col, Card, CardText, CardBody, CardTitle, CardSubtitle 
 import Reveal from 'react-reveal/Reveal'
 import CaseStudies from '../components/CaseStudies'
 
+const isServer = typeof window === 'undefined'
+  if (isServer) {
+    null
+  } else {
+    import Reveal from 'react-reveal/Reveal'
+}
+
 import intro_photo from '../images/intro_photo.jpg'
 
 const IndexPage = ({transition}) => (
