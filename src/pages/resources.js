@@ -6,13 +6,7 @@ import PageContent from '../components/PageContent'
 import PageAltContent from '../components/PageAltContent'
 import PageCTA from '../components/PageCTA'
 import PageBriefings from '../components/PageBriefings';
-
-const isServer = typeof window === 'undefined'
-  if (isServer) {
-    null
-  } else {
-    import Reveal from 'react-reveal/Reveal'
-}
+import Reveal from 'react-reveal/Reveal'
 
 const ResourcesPage = ({transition}) => (
   <div style={transition && transition.style}>

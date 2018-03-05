@@ -1,6 +1,13 @@
 import React from 'react'
 import { Container, Col, Row } from 'reactstrap'
-import Reveal from 'react-reveal/Reveal'
+
+const isServer = typeof window === 'undefined'
+  
+if (isServer) {
+    null
+} else {
+    import Reveal from 'react-reveal/Reveal'
+}
 
 const PageContent = (props) => (
     <section className='page-content'>

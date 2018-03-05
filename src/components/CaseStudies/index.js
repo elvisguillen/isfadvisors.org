@@ -1,7 +1,14 @@
 import React, {Component} from 'react'
 import Link from 'gatsby-link'
 import { Container, Row, Col, Card, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap'
-import Reveal from 'react-reveal/Reveal'
+
+const isServer = typeof window === 'undefined'
+  
+if (isServer) {
+    null
+} else {
+    import Reveal from 'react-reveal/Reveal'
+}
 
 import photo_case_studies from '../../images/photo_case_studies.jpg'
 import photo_case_studies2 from '../../images/photo_case_studies2.jpg'
