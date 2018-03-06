@@ -62,7 +62,7 @@ export default class TemplateWrapper extends Component {
         </div>
 
         <footer>
-          <p className='text-center'>© 2018 Initiative for Smallholder Finance. <Link to='/'>Privacy Policy</Link>.</p>
+          <p className='text-center'>© 2018 ISF. <Link to='/'>Privacy Policy</Link>.</p>
         </footer>
       </div>
     )

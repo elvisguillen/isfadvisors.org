@@ -83,6 +83,9 @@
 
     .page-hero {
         padding: $gutter*2 - 30 $gutter/2 - 20px;
+        h1 {
+            font-size: 45px;
+        }
     }
 
     .page-content {
@@ -98,6 +101,9 @@
         }
     }
 
+    .background-span-blue {
+        font-size: 45px;
+    }
     .team-right {
         margin-top: 0px;
     }
@@ -130,7 +136,6 @@
     }
 
     .hero {
-        height: 720px;
         h1 {
             padding: 80px 180px;
             span {

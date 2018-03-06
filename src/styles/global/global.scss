@@ -6,7 +6,7 @@ body, html {
 
 h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 h1, h2, h4, h5, h6 {
@@ -22,19 +22,21 @@ p {
     font-size: 18px;
     color: $black;
     letter-spacing: 1px;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 a {
   transition: all 500ms ease-in-out;
+  color: $brand-green;
   &:hover {
+    color: $lighter-green;
     text-decoration: none;
   }
 }
 
 .subtitle {
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .container {
@@ -48,13 +50,22 @@ button {
     text-transform: uppercase;
     background-color: transparent;
     padding: 15px 45px;
-    border: 3px solid $black;
+    border: $bordersize solid $black;
     margin-top: $mobile-gutter;
     cursor: pointer;
     transition: all 500ms ease-in-out;
-
+    letter-spacing: 1px;
+    width: 210px;
+    
+    &:first-of-type {
+      margin-top: 0px;
+    }
     &:hover {
       background-color: $light-blue;
+    }
+
+    &:nth-of-type(1) {
+      margin-top: -3px;
     }
 
     &.white {
@@ -65,7 +76,7 @@ button {
 
 .background-span-blue {
   background-color: $light-blue;
-  font-size: 32px;
+  font-size: 34px;
   padding: 7px;
   line-height: 1.9;
   color: $copy-green;
@@ -78,7 +89,7 @@ footer {
 
     p {
         color: white;
-        font-size: 15px;
+        font-size: 18px;
     }
 
     a {

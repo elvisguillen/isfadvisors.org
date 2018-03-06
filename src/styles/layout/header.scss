@@ -9,9 +9,9 @@
 }
 
 .main-nav {
-    border: 3px solid $black;
-    height: 66px;
-    margin-top: 40px;
+    border: $bordersize solid $black;
+    height: 65px;
+    margin-top: 42px;
     background-color: $black;
     padding: 0px;
 
@@ -33,7 +33,7 @@
             background: none;
             border-left: 40px solid transparent;
             border-right: 0px solid transparent;
-            border-top: 60px solid $tan;
+            border-top: 59px solid $tan;
             content: "";
             left: -40px;
             position: absolute;
@@ -44,7 +44,7 @@
         &::after {
             border-left: 0px solid transparent;
             border-right: 40px solid transparent;
-            border-bottom: 60px solid $tan;
+            border-bottom: 59px solid $tan;
             content: "";
             height: 0;
             position: absolute;

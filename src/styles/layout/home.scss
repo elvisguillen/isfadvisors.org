@@ -45,7 +45,7 @@
 
     span {
         background-color: $brand-green;
-        font-size: 32px;
+        
         line-height: 1.9;
         padding: 7px;
         color: $tan;
@@ -85,9 +85,66 @@
     height:         calc(100vh);
     color: white;
     display: flex;
+    overflow: hidden;
 
+    .overlay {
+        height: -webkit-calc(100vh);
+        height:    -moz-calc(100vh);
+        height:         calc(100vh);
+        width: 50%;
+        position: absolute;
+        background-color: rgba(0,0,0,0.8);
+        opacity: 0;
+        right: 0;
+        z-index: 0;
+        transition: all 300ms ease-in-out;
+        padding: $gutter*2;
+        color: white;
+        
+        .close {
+            font-size: 30px;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            color: white;
+            border: 0px;
+            background: none;
+            padding: 30px;
+            width: auto;
+            cursor: pointer;
+        }
+
+        &.open-right {
+            right: 0px!important;
+            opacity: 1!important;
+            z-index: 1!important;
+        }
+
+        &.open-left {
+            left: 0px!important;
+            opacity: 1!important;
+            z-index: 1!important;
+        }
+    }
+    
+    
     .case-study {
         cursor: pointer;
+        transition: all 300ms ease-in-out;
+
+        .case-study-image {
+            display: flex;
+            transition: all 500ms ease-in-out;
+
+            img {
+                object-fit: cover;
+                height: -webkit-calc(100vh);
+                height:    -moz-calc(100vh);
+                height:         calc(100vh);
+                width: 100%;
+                transition: all 500ms ease-in-out;
+            }
+        }
 
         &.full-height {
             height: -webkit-calc(100vh);
@@ -115,6 +172,18 @@
             height:    -moz-calc(60vh);
             height:         calc(60vh);
             overflow: hidden;
+
+            &:hover {
+                height: -webkit-calc(100vh);
+                height:    -moz-calc(100vh);
+                height:         calc(100vh);
+                overflow: hidden;
+                top: 0px;
+                
+                &.left {
+                    margin-top: -40vh
+                }
+            }
         }
 
         &.small-height {
@@ -122,6 +191,7 @@
             height:    -moz-calc(40vh);
             height:         calc(40vh);
             overflow: hidden;
+
             .case-study-image {
                 display: flex;
                 height: 100%;
@@ -132,22 +202,46 @@
                 }
             }
 
-            &:hover {
-                height: -webkit-calc(100vh);
-                height:    -moz-calc(100vh);
-                height:         calc(100vh);
+            .top {
+                order: 1;
             }
+
+            &.right-contained {
+                position: absolute;
+                right: 0px;
+                z-index: 0;
+            }
+
+            &:hover {
+                height: -webkit-calc(100vh)!important;
+                height:    -moz-calc(100vh)!important;
+                height:         calc(100vh)!important;
+                max-width: 100% !important;
+                flex: 0 0 100%;
+
+                &.right {
+                    margin-top: -60vh;
+                }
+
+                &.right-contained {
+                    z-index: 10;
+                    
+                }
+
+                &.left-contained {
+                    z-index: 20;
+                    display: block;
+                }
+
+            }
+
+            
         }
 
-        &.full-height:hover {
-            img {
-                height: -webkit-calc(60vh);
-                height:    -moz-calc(60vh);
-                height:         calc(60vh);
-                transition: all 500ms ease-in-out;
-            }
+        &:hover {
             .case-study-copy {
                 transition: all 500ms ease-in-out;
+                transition-delay: 200ms;
                 height: -webkit-calc(40vh);
                 height:    -moz-calc(40vh);
                 height:         calc(40vh);
@@ -162,11 +256,11 @@
             background-color: $lighter-green;
             left: 0px;
             width: 100%;
-            height: -webkit-calc(40vh);
-            height:    -moz-calc(40vh);
-            height:         calc(40vh);
+            height: -webkit-calc(30vh);
+            height:    -moz-calc(30vh);
+            height:         calc(30vh);
             transition: all 500ms ease-in-out;
-            bottom: -40vh;
+            bottom: -30vh;
         
             h3 {
                 font-family: $circular-book!important;
@@ -183,11 +277,13 @@
 
 }
 
+
 .cta {
     background-color: $tan;
     padding: $gutter*1.5 $mobile-gutter - 10;
     p {
-        font-size: 24px;
+        font-size: 28px;
+        line-height: 45px;
 
         a {
             color: $black;

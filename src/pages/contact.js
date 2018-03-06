@@ -70,15 +70,13 @@ export default class ContactPage extends Component {
                                 </FormGroup>
 
                                 <FormGroup>
-                                    <Input type='number' name='phone' id='inputPhone' placeholder='Phone Number' />
+                                    <Input type='text' name='subject' id='inputSubject' placeholder='Organization' />
                                 </FormGroup>
-
                                 <FormGroup>
-                                    <Input type='text' name='subject' id='inputSubject' placeholder='Subject' />
+                                    <Input type='text' name='subject' id='inputSubject' placeholder='How Did You Hear About ISF?' />
                                 </FormGroup>
-
                                 <FormGroup>
-                                    <Input type='textarea' name='text' id='inputComment' placeholder='How can we help?' />
+                                    <Input type='text' name='subject' id='inputSubject' placeholder='Type of Organization' />
                                 </FormGroup>
                                 <FormGroup>
                                     <button type='submit'>Submit ›</button>
@@ -101,13 +99,14 @@ export default class ContactPage extends Component {
                         </ReactMapGL>
                         
                     </Col>
-                    <Col className='text-left' xs='12' lg={{size: 4, offset: 1}}>
+                    <Col className='text-left' xs='12' lg={{size: 5, offset: 1}}>
+                        <h3>Questions? <Link to='/'>Contact Us.</Link></h3>
                         <PageBriefings
                             subtitle='Nairobi'
                             copy={
                                 <div>
                                     <p>1000 F Street NW Unit 890
-                                    Washington, D.C.
+                                    Washington, D.C.<br />
                                     202.202.2002</p>
                                 </div>
                             } />
@@ -117,7 +116,7 @@ export default class ContactPage extends Component {
                             copy={
                                 <div>
                                     <p>1000 F Street NW Unit 890
-                                    Washington, D.C. 
+                                    Washington, D.C. <br />
                                     202.202.2002</p>
                                 </div>
                             } />
@@ -127,7 +126,7 @@ export default class ContactPage extends Component {
                             copy={
                                 <div>
                                     <p>1000 3rd Street
-                                    Unit 890 New York, NY 121212 
+                                    Unit 890 New York, NY 121212 <br />
                                     202.202.2002</p>
                                 </div>
                             } />
