@@ -8,7 +8,7 @@ const TeamMember = (props) => (
             {props.thumbnail}
         </div>
         <div className='member-copy'>
-            <Link to={props.permalink}><h3>{props.name}</h3></Link>
+            <Link to='/single-team'><h3>{props.name}</h3></Link>
             <h4 className='subtitle'>{props.title}</h4>
         </div>
     </Col>

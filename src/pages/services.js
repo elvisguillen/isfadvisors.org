@@ -15,7 +15,7 @@ const ServicesPage = ({transition}) => (
 
     <PageContent 
       left={
-        <button>Portfolio</button>
+        <Link to='/portfolio'><button>Portfolio</button></Link>
       } 
       right={
         <div>
@@ -37,7 +37,7 @@ const ServicesPage = ({transition}) => (
       </Row>
     </PageAltContent>
 
-    <PageContent className='servicesBottom'
+    <PageContent
       right={
         <div>
           <h3>ISF’s primary role is to act as a design catalyst. The emphasis is on mobilizing additional financing for rural enterprises and seeding replication of innovative models. </h3>

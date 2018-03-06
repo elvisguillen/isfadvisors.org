@@ -14,7 +14,7 @@
 
     span {
         background-color: $light-blue;
-        font-size: 32px;
+        font-size: 28px;
         padding: 7px;
         line-height: 1.9;
         color: $copy-green;
@@ -35,6 +35,13 @@
     }
 }
 
+.team-member-page {
+    .rural-farmers {
+        h1 {
+            display: none;
+        }
+    }
+}
 .rural-farmers {
     background-color: $light-green;
     padding: $mobile-gutter*2 0px;
@@ -283,7 +290,7 @@
     padding: $gutter*1.5 $mobile-gutter - 10;
     p {
         font-size: 28px;
-        line-height: 45px;
+        line-height: 65px;
 
         a {
             color: $black;

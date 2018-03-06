@@ -9,6 +9,10 @@
             }
         }
     }
+
+    .background-span-blue {
+        font-size: 28px;
+    }
  }
 @include media-breakpoint-up(sm) { 
 
@@ -16,9 +20,9 @@
 @include media-breakpoint-up(md) { }
 @include media-breakpoint-up(lg) {
     .hero {
-        height: -webkit-calc(100vh - 110px);
-        height:    -moz-calc(100vh - 110px);
-        height:         calc(100vh - 110px);
+        height: -webkit-calc(100vh - 148px);
+        height:    -moz-calc(100vh - 148px);
+        height:         calc(100vh - 148px);
         h1 {
             padding: 80px 50px;
             span {
@@ -92,7 +96,7 @@
         padding: $gutter*2 0px;
 
         .page-content-left {
-            border-right: 3px solid $black;            
+            border-right: 2px solid $black;            
             order: 1;
         }
 
@@ -126,10 +130,10 @@
                 padding-left: 25px;
                 padding-right: 25px;
                 &:first-of-type {
-                    padding-left: 54px;
+                    padding-left: 58px;
                 }
                 &:last-of-type {
-                    padding-right: 54px;
+                    padding-right: 59px;
                 }
             }
         }

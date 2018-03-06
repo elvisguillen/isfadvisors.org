@@ -63,13 +63,10 @@ const IndexPage = ({transition}) => (
 
     <CaseStudies />
     
-    <section className='cta'>
+    <section className='cta text-center'>
       <Container>
       <p>
-        Learn more about our <Link to='/'>areas of expertise</Link>, industry-leading <Link to='/'>research</Link> or current <Link to='/'>job openings.</Link>
-      </p>
-      <p>
-        You can also <Link to='/'>contact us</Link> or sign up for our <Link to='/'>newsletter.</Link>
+        Learn more about our <Link to='/services#pageAltContent'>areas of expertise</Link>, industry-leading <Link to='/research'>research</Link> or current <Link to='/careers'>job openings.</Link> You can also <Link to='/contact'>contact us</Link> or sign up for our <Link to='/contact'>newsletter.</Link>
       </p>
       </Container>
     </section>

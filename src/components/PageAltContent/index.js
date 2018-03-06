@@ -3,7 +3,7 @@ import { Container, Col, Row } from 'reactstrap'
 import Reveal from 'react-reveal/Reveal'
 
 const PageAltContent = (props) => (
-    <section className='rural-farmers'>
+    <section id='pageAltContent' className='rural-farmers'>
       <Container>
         <Col lg={{size: 6, offset: 3}} >
           <Reveal effect='fadeInUp'>

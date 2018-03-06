@@ -22,7 +22,7 @@
         letter-spacing: 1px;
         padding-left: 25px;
         padding-right: 25px;
-        margin-right: 44px;
+        margin-right: 42px;
         height: 100%;
         display: block;
         background-color: $tan;
@@ -33,7 +33,7 @@
             background: none;
             border-left: 40px solid transparent;
             border-right: 0px solid transparent;
-            border-top: 59px solid $tan;
+            border-top: 61px solid $tan;
             content: "";
             left: -40px;
             position: absolute;
@@ -44,7 +44,7 @@
         &::after {
             border-left: 0px solid transparent;
             border-right: 40px solid transparent;
-            border-bottom: 59px solid $tan;
+            border-bottom: 61px solid $tan;
             content: "";
             height: 0;
             position: absolute;
