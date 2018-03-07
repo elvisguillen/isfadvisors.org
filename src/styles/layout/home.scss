@@ -214,6 +214,7 @@
                 height:    -moz-calc(40vh);
                 height:         calc(40vh);
                 bottom: 0;
+                opacity: 1;
             }
         }
 
@@ -229,9 +230,15 @@
             height:         calc(30vh);
             transition: all 500ms ease-in-out;
             bottom: -30vh;
-        
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+
             h3 {
                 font-family: $circular-book!important;
+                padding-top: 0px;
+                margin-top: -20px;
             }
     
             h2 {
