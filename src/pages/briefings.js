@@ -17,6 +17,7 @@ const BriefingsPage = ({transition}) => (
     <PageContent
         left={
             <Link to='/resources'><button>Resources</button></Link>
+            
         }
         right={
         <div>
