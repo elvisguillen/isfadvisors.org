@@ -1,0 +1,54 @@
+.rural-farmers {
+    background-color: $light-green;
+    padding: $mobile-gutter*2 0px;
+    
+    h1 {
+        margin-bottom: $mobile-gutter;
+    }
+
+    h3 {
+        margin-bottom: $gutter/2;
+    }
+
+    .team-member {
+        h3 {
+            margin-bottom: 10px;
+        }
+        
+    }
+
+    span {
+        background-color: $brand-green;
+        font-size: 28px;
+        line-height: 1.9;
+        padding: 7px;
+        color: $tan;
+    }
+
+    .rural-farmers-reasons {
+        background-color: white;
+        padding: $mobile-gutter*2 $mobile-gutter*2;
+        color: $brand-green;
+
+        .reason {
+            margin-bottom: $mobile-gutter - 10px;
+            padding: 0px 20px;
+            &::after {
+                content: '+';
+                color: $lighter-green;
+                text-align: center;
+                font-size: 70px;
+                font-family: "Circular Air ";
+                font-weight: 100;
+            }
+
+            &:last-of-type::after {
+                display: none;
+            }
+        }
+        p {
+            color: $brand-green;
+            font-size: 24px;
+        }
+    }
+}

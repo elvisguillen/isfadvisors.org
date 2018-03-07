@@ -104,7 +104,7 @@ export default class CaseStudies extends Component {
                                         <div className='case-study-copy'>
                                             <Container>
                                                 <h3>Case Study:</h3>
-                                                <h4>Blended investment fund design and development</h4>
+                                                <h2>Blended investment fund design and development</h2>
                                                 <button className='white'>Expand</button>
                                             </Container>
                                         </div>
@@ -116,7 +116,7 @@ export default class CaseStudies extends Component {
                                         <div className='case-study-copy'>
                                             <Container>
                                                 <h3>Case Study:</h3>
-                                                <h4>Blended investment fund design and development</h4>
+                                                <h2>Blended investment fund design and development</h2>
                                                 <button className='white'>Expand</button>
                                             </Container>
                                         </div>
@@ -130,7 +130,7 @@ export default class CaseStudies extends Component {
                                         <div className='case-study-copy'>
                                             <Container>
                                                 <h3>Case Study:</h3>
-                                                <h4>Blended investment fund design and development</h4>
+                                                <h2>Blended investment fund design and development</h2>
                                                 <button className='white'>Expand</button>
                                             </Container>
                                         </div>
@@ -146,7 +146,7 @@ export default class CaseStudies extends Component {
                                         <div className='case-study-copy'>
                                             <Container>
                                                 <h3>Case Study:</h3>
-                                                <h4>Blended investment fund design and development</h4>
+                                                <h2>Blended investment fund design and development</h2>
                                                 <button className='white'>Expand</button>
                                             </Container>
                                         </div>
@@ -160,7 +160,7 @@ export default class CaseStudies extends Component {
                                         <div className='case-study-copy'>
                                             <Container>
                                                 <h3>Case Study:</h3>
-                                                <h4>Blended investment fund design and development</h4>
+                                                <h2>Blended investment fund design and development</h2>
                                                 <button className='white'>Expand</button>
                                             </Container>
                                         </div>
@@ -172,7 +172,7 @@ export default class CaseStudies extends Component {
                                         <div className='case-study-copy'>
                                             <Container>
                                                 <h3>Case Study:</h3>
-                                                <h4>Blended investment fund design and development</h4>
+                                                <h2>Blended investment fund design and development</h2>
                                                 <button className='white'>Expand</button>
                                             </Container>
                                         </div>

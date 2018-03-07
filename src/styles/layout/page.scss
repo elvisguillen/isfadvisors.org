@@ -54,23 +54,3 @@
     }
 }
 
-.post {
-    margin-bottom: $gutter;
-
-    a {
-        color: $brand-green;
-        &:hover{
-            color: $lighter-green;
-        }
-    }
-
-    h3 {
-        margin-top: 0px;
-    }
-
-    .post-image {
-        margin-bottom: $gutter/2;
-    }
-
-    
-}

@@ -40,7 +40,7 @@ export default class ContactPage extends Component {
 
         return (
         
-            <div style={this.props.transition && this.props.transition.style}>
+            <div style={this.props.transition && this.props.transition.style} className='contact-page'>
                 <PageHero>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </PageHero>
@@ -87,7 +87,7 @@ export default class ContactPage extends Component {
                     } />
 
                 <PageAltContent title='Get In Touch'>
-                    <Col xs='12' lg={{size: 6}} xl={{size: 6}}>
+                    <Col className='d-none d-md-block' xs='12' lg={{size: 6}} xl={{size: 6}}>
                         <ReactMapGL
                             {...this.state.viewport}
                             scrollZoom={false}
@@ -100,7 +100,7 @@ export default class ContactPage extends Component {
                         
                     </Col>
                     <Col className='text-left' xs='12' lg={{size: 5, offset: 1}}>
-                        <h3>Questions? <Link to='/'>Contact Us.</Link></h3>
+                        <h3>Questions? <Link className='underline' to='/'>Contact Us.</Link></h3>
                         <PageBriefings
                             subtitle='Nairobi'
                             copy={
@@ -134,10 +134,10 @@ export default class ContactPage extends Component {
                 </PageAltContent>
 
                 <PageCTA>
-                <div>
-                    <p>Check out our <Link to='/'>case studies</Link>, industry-leading <Link to='/'>research.</Link></p>
-                    <p>You can also <Link to='/'>contact us</Link> or sign up for our <Link to='/'>newsletter.</Link></p>
-                </div>
+                    <div>
+                        <p>Check out our <Link to='/'>case studies</Link>, industry-leading <Link to='/'>research.</Link></p>
+                        <p>You can also <Link to='/'>contact us</Link> or sign up for our <Link to='/'>newsletter.</Link></p>
+                    </div>
                 </PageCTA>
             </div>
         )
