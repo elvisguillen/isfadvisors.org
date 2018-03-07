@@ -32,8 +32,6 @@ const AboutPage = ({transition}) => (
       } />
 
     <PageAltContent title='Media Coverage'>
-      <MediaCoverage  />
-      
     </PageAltContent>
 
     <PageCTA>
