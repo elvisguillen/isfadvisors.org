@@ -10,7 +10,7 @@ import PageCTA from '../components/PageCTA'
 const CareerPage = ({transition}) => (
   <div style={transition && transition.style}>
     <PageHero>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Careers
     </PageHero>
 
     <PageContent
