@@ -17,7 +17,7 @@ const ResearchPage = ({transition}) => (
             left={
                 <div>
                     <Link to='/briefings'><button>Briefings</button></Link>
-                    <Link to='/resources'><button>Resources</button></Link>
+                    <Link to='/resources'><button className="border-top-none">Resources</button></Link>
                 </div>
             }
             right={
@@ -29,7 +29,7 @@ const ResearchPage = ({transition}) => (
         />
         <PageAltContent title='Research by Category' />
         <PageCTA>
-            <p>Check out our <Link to='/'>case studies</Link>, industry-leading <Link to=''>research.</Link></p>
+            <p>Check out our <Link to='/'>case studies</Link> & industry-leading <Link to=''>research.</Link></p>
             <p>You can also contact us or sign up for our newsletter.</p>
         </PageCTA>
     </div>
