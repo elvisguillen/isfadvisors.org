@@ -75,6 +75,17 @@ export default class ContactPage extends Component {
                                 <FormGroup>
                                     <Input type='text' name='subject' id='inputSubject' placeholder='How Did You Hear About ISF?' />
                                 </FormGroup>
+
+                                {/* <FormGroup>
+                                    <Input type='text' name='subject' id='inputSubject' placeholder='How Did You Hear About ISF?'>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </Input>
+                                </FormGroup> */}
+
                                 <FormGroup>
                                     <Input type='text' name='subject' id='inputSubject' placeholder='Type of Organization' />
                                 </FormGroup>
@@ -135,7 +146,7 @@ export default class ContactPage extends Component {
 
                 <PageCTA>
                     <div>
-                        <p>Check out our <Link to='/'>case studies</Link>, industry-leading <Link to='/'>research.</Link></p>
+                        <p>Check out our <Link to='/'>case studies</Link> & industry-leading <Link to='/'>research.</Link></p>
                         <p>You can also <Link to='/'>contact us</Link> or sign up for our <Link to='/'>newsletter.</Link></p>
                     </div>
                 </PageCTA>

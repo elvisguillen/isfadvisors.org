@@ -47,7 +47,7 @@ const BriefingsPage = ({transition}) => (
 
     <PageCTA>
       <div>
-        <p>Check out our <Link to='/'>case studies</Link>, industry-leading <Link to='/'>research.</Link></p>
+        <p>Check out our <Link to='/'>case studies</Link> & industry-leading <Link to='/'>research.</Link></p>
         <p>You can also <Link to='/'>contact us</Link> or sign up for our <Link to='/'>newsletter.</Link></p>
       </div>
     </PageCTA>
