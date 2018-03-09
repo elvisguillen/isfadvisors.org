@@ -26,13 +26,15 @@
     .nav-item {
         font-family: $circular-black;
         font-size: 18px;
+        color: $black;
         text-transform: uppercase;
         letter-spacing: 1px;
         padding-left: 25px;
         padding-right: 25px;
         margin-right: 42px;
         height: 100%;
-        display: block;
+        display: flex;
+        align-items: center;
         background-color: $tan;
         position: relative;
         transition: all 500ms ease-in-out;
@@ -76,6 +78,17 @@
                 display: none;
             }
         }
+
+        &.active {
+            background: $green;
+            color: $tan;
+            &::before {
+                border-top: 61px solid $green;
+            }
+            &::after {
+                border-bottom: 61px solid $green;
+            }
+        }
         
         a {
             color: $black;
@@ -85,7 +98,7 @@
 
         &:hover {
             background-color: $light-blue;
-            
+            color: $black;
             &::before {
                 border-top-color: $light-blue;
             }

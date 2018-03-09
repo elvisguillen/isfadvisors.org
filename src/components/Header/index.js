@@ -12,22 +12,15 @@ const Header = (logo) => (
         </Col>
 
         <Col lg='8' className='d-none d-lg-block main-nav'>
-        
-            <div className='nav-item float-lg-left'>
-              <Link to='/about'>About</Link>
-            </div>
+  
+            <Link to='/about' className='nav-item float-lg-left' activeClassName="active">About</Link>
+          
+            <Link to='/services' className='nav-item float-lg-left' activeClassName="active">Services</Link>
 
-            <div className='nav-item float-lg-left'>
-              <Link to='/services'>Services</Link>
-            </div>
+            <Link to='/research' className='nav-item float-lg-left'activeClassName="active">Research</Link>
+          
+            <Link to='/contact' className='nav-item float-lg-left' activeClassName="active">Contact</Link>
 
-            <div className='nav-item float-lg-left'>
-              <Link to='/research'>Research</Link>
-            </div>
-
-            <div className='nav-item float-lg-left'>
-              <Link to='/contact'>Contact</Link>
-            </div>
         </Col>
       </Row>
     </Container>
