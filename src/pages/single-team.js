@@ -8,9 +8,11 @@ import PageCTA from '../components/PageCTA'
 
 import team_matt from '../images/Matthew_Shakhovsky.jpg'
 
+import hero_page from '../images/hero_page.jpg'
+
 const SingleTeamPage = ({transition}) => (
   <div style={transition && transition.style} className='team-member-page'>
-    <PageHero>
+    <PageHero heroImage={hero_page}>
       We're a team committed to transforming ideas into action.
     </PageHero>
 

@@ -7,9 +7,11 @@ import PageAltContent from '../components/PageAltContent'
 import PageAltAreas from '../components/PageAltAreas'
 import PageCTA from '../components/PageCTA'
 
+import hero_page from '../images/hero_page.jpg'
+
 const ServicesPage = ({transition}) => (
   <div style={transition && transition.style}>
-    <PageHero>
+    <PageHero heroImage={hero_page}>
       We build partnerships and financial structures that can drive capital to rural enterprises.
     </PageHero>
 

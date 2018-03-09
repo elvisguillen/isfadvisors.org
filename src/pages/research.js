@@ -9,9 +9,11 @@ import PageCTA from '../components/PageCTA'
 import ResearchContent from '../components/ResearchContent'
 import ResearchPost from '../components/ResearchPost'
 
+import hero_page from '../images/hero_page_2.jpg'
+
 const ResearchPage = ({transition}) => (
     <div style={transition && transition.style} className='research-page'>
-        <PageHero>
+        <PageHero heroImage={hero_page}>
             Our research and deep sector understanding informs our advisory and implementation work.
         </PageHero>
 

@@ -8,9 +8,11 @@ import PageCTA from '../components/PageCTA'
 import PageBriefings from '../components/PageBriefings';
 import Reveal from 'react-reveal/Reveal'
 
+import hero_page from '../images/hero_page_2.jpg'
+
 const BriefingsPage = ({transition}) => (
   <div style={transition && transition.style}>
-    <PageHero>
+    <PageHero heroImage={hero_page}>
       Briefings
     </PageHero>
 

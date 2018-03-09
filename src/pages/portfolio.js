@@ -15,9 +15,11 @@ import photo_case_studies4 from '../images/photo_case_studies4.jpg'
 import photo_case_studies5 from '../images/photo_case_studies5.jpg'
 import photo_case_studies6 from '../images/photo_case_studies6.jpg'
 
+import hero_page from '../images/hero_page_2.jpg'
+
 const PortfolioPage = ({transition}) => (
   <div style={transition && transition.style}>
-    <PageHero>
+    <PageHero heroImage={hero_page}>
         Whether facilitating partnerships or building financial structures, our work takes many forms.
     </PageHero>
 

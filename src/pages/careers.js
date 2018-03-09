@@ -7,9 +7,11 @@ import PageAltContent from '../components/PageAltContent'
 import MediaCoverage from '../components/MediaCoverage'
 import PageCTA from '../components/PageCTA'
 
+import hero_page from '../images/hero_page_2.jpg'
+
 const CareerPage = ({transition}) => (
   <div style={transition && transition.style}>
-    <PageHero>
+    <PageHero heroImage={hero_page}>
       Like what you see? Join our team to help us transform rural economies
     </PageHero>
 

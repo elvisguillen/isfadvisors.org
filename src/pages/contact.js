@@ -9,6 +9,8 @@ import PageBriefings from '../components/PageBriefings'
 import ReactMapGL, {Marker} from 'react-map-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
 
+import hero_page from '../images/hero_page_2.jpg'
+
 export default class ContactPage extends Component {
 
     state = {
@@ -41,7 +43,7 @@ export default class ContactPage extends Component {
         return (
         
             <div style={this.props.transition && this.props.transition.style} className='contact-page'>
-                <PageHero>
+                <PageHero heroImage={hero_page}>
                     Interested in learning more? <br></br> Send us a note and we'll get in touch.
                 </PageHero>
 

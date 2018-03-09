@@ -6,9 +6,11 @@ import PageContent from '../components/PageContent'
 import PageAltContent from '../components/PageAltContent'
 import PageCTA from '../components/PageCTA'
 
+import hero_page from '../images/hero_page.jpg'
+
 const AboutPage = ({transition}) => (
   <div style={transition && transition.style}>
-    <PageHero>
+    <PageHero heroImage={hero_page}>
       We're on a mission to transform rural economies.
     </PageHero>
 
