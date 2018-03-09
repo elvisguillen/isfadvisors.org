@@ -152,8 +152,8 @@ const ResearchPage = ({transition}) => (
             </ResearchContent>
         </PageAltContent>
         <PageCTA>
-            <p>Check out our <Link to='/'>case studies</Link> & industry-leading <Link to=''>research.</Link></p>
-            <p>You can also contact us or sign up for our newsletter.</p>
+            <p>Want to learn more?</p>
+            <p><Link to='/contact'>Contact us</Link> or sign up for our <Link to='/contact'>newsletter.</Link></p>
         </PageCTA>
     </div>
     

@@ -55,12 +55,13 @@
         height: -webkit-calc(100vh);
         height:    -moz-calc(100vh);
         height:         calc(100vh);
-        width: 50%;
+        width: -webkit-calc(50vw);
+        width:    -moz-calc(50vw);
+        width:         calc(50vw);
         position: absolute;
         background-color: rgba(0,0,0,0.8);
         opacity: 0;
-        right: 0;
-        z-index: 0;
+        z-index: -1;
         transition: all 300ms ease-in-out;
         padding: $gutter*2;
         color: white;
@@ -79,15 +80,31 @@
         }
 
         &.open-right {
-            right: 0px!important;
+            right: -webkit-calc(-50vw);
+            right:    -moz-calc(-50vw);
+            right:         calc(-50vw);
             opacity: 1!important;
             z-index: 1!important;
         }
 
+        &.overlay-right {
+            right: -webkit-calc(-50vw);
+            right:    -moz-calc(-50vw);
+            right:         calc(-50vw);
+        }
+
         &.open-left {
-            left: 0px!important;
+            left: -webkit-calc(-50vw);
+            left:    -moz-calc(-50vw);
+            left:         calc(-50vw);
             opacity: 1!important;
             z-index: 1!important;
+        }
+
+        &.overlay-left {
+            left: -webkit-calc(-50vw);
+            left:    -moz-calc(-50vw);
+            left:         calc(-50vw);
         }
     }
     
@@ -110,32 +127,12 @@
             }
         }
 
-        &.full-height {
-            height: -webkit-calc(100vh);
-            height:    -moz-calc(100vh);
-            height:         calc(100vh);
-            overflow: hidden;
-            
-            .case-study-image {
-                display: flex;
-                transition: all 500ms ease-in-out;
-
-                img {
-                    object-fit: cover;
-                    height: -webkit-calc(100vh);
-                    height:    -moz-calc(100vh);
-                    height:         calc(100vh);
-                    width: 100%;
-                    transition: all 500ms ease-in-out;
-                }
-            }
-        }
-
         &.tall-height {
             height: -webkit-calc(60vh);
             height:    -moz-calc(60vh);
             height:         calc(60vh);
             overflow: hidden;
+            z-index: 0;
 
             &:hover {
                 height: -webkit-calc(100vh);
@@ -147,6 +144,15 @@
                 &.left {
                     margin-top: -40vh
                 }
+
+                &.right {
+                    z-index: 2;
+                }
+
+                & + .right-contained {
+                    bottom: -40vh;
+                }
+                
             }
         }
 
@@ -169,11 +175,17 @@
             .top {
                 order: 1;
             }
-
+            
             &.right-contained {
                 position: absolute;
                 right: 0px;
                 z-index: 0;
+            }
+            
+            &.right {
+                &.right-contained {
+                    bottom: 0px;
+                }
             }
 
             &:hover {
@@ -189,7 +201,6 @@
 
                 &.right-contained {
                     z-index: 10;
-                    
                 }
 
                 &.left-contained {

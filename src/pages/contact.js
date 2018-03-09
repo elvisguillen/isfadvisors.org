@@ -146,8 +146,8 @@ export default class ContactPage extends Component {
 
                 <PageCTA>
                     <div>
-                        <p>Check out our <Link to='/'>case studies</Link> & industry-leading <Link to='/'>research.</Link></p>
-                        <p>You can also <Link to='/'>contact us</Link> or sign up for our <Link to='/'>newsletter.</Link></p>
+                        <p>Want to learn more?</p>
+                        <p>Check out our <Link to='/portfolio'>case studies</Link> & industry-leading <Link to='/research'>research.</Link></p>
                     </div>
                 </PageCTA>
             </div>
