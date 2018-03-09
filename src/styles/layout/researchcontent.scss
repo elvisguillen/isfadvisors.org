@@ -51,19 +51,7 @@
             border: 0px;
             h3 {
                 display: inline-block;
-                padding-left: 80px;
-                &:before {
-                    content: '';
-                    width: 60px;
-                    height: 50px;
-                    background: url('../images/isf_mt_icon.png') no-repeat;
-                    background-size: cover;
-                    display: block;
-                    position: absolute;
-                    margin-top: 10px;
-                    margin-left: -80px;
-                    transition: all 300ms ease-in-out;
-                }
+                
             }
         }
 

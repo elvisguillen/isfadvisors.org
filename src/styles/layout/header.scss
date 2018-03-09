@@ -8,6 +8,14 @@
     }
 }
 
+.nav-icon {
+    margin: 0 auto;
+    width: 170px;
+    display: block;
+    bottom: 20px;
+    margin-top: 79px;
+}
+
 .main-nav {
     border: $bordersize solid $black;
     height: 65px;
@@ -87,3 +95,4 @@
         }
     }
 }
+
