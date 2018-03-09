@@ -51,16 +51,15 @@
             border: 0px;
             h3 {
                 display: inline-block;
-                
             }
         }
 
         
 
         .page-content-right {
-            // h3 {
-            //     padding-left: 80px;
-            // }
+            h3 {
+                font-family: $circular-book!important;
+            }
             
             // a {
             //     display: inline-block;
