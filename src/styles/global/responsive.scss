@@ -163,7 +163,7 @@
 
     .case-studies {
         .overlay {
-            padding: $gutter*2;
+            padding: $gutter + 30;
         }
         .case-study {
             .case-study-copy {
@@ -192,6 +192,14 @@
             .reason {
                 padding: 40px 73px;
             }
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .case-studies {
+        .overlay {
+            padding: $gutter * 2;
         }
     }
 }
