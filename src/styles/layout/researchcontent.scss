@@ -1,0 +1,162 @@
+.research-page {
+    .rural-farmers {
+        .rural-farmers-reasons {
+            position: relative;
+            padding: 0px 30px!important;
+        }
+    }
+}
+
+.modal-research {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+    margin-left: 15px;
+    
+    &.open {
+        opacity: 1;
+        z-index: 2;
+        margin-left: -15px;
+        transition: all 500ms ease-in-out;
+    }
+
+    .close-button{
+        color: $black!important;
+        width: 50px;
+        height: 50px;
+        font-size: 70px;
+        font-weight: 100;
+        font-family: Helvetica Neue,Circular Book;
+        font-weight: 200;
+        position: absolute;
+        z-index: 1;
+        top: 20px;
+        right: 20px;
+        transform: rotateZ(45deg);
+        cursor: pointer;
+
+        &:hover {
+            color: $lighter-green!important;
+        }
+    }
+
+    .page-content {
+        background-color: white;
+        padding: $gutter+10 0px;
+
+        .page-content-left {
+            border: 0px;
+            h3 {
+                display: inline-block;
+                padding-left: 80px;
+                &:before {
+                    content: '';
+                    width: 60px;
+                    height: 50px;
+                    background: url('../images/isf_mt_icon.png') no-repeat;
+                    background-size: cover;
+                    display: block;
+                    position: absolute;
+                    margin-top: 10px;
+                    margin-left: -80px;
+                    transition: all 300ms ease-in-out;
+                }
+            }
+        }
+
+        
+
+        .page-content-right {
+            // h3 {
+            //     padding-left: 80px;
+            // }
+            
+            // a {
+            //     display: inline-block;
+            //     &:before {
+            //         content: '';
+            //         width: 60px;
+            //         height: 50px;
+            //         background: url('../images/isf_mt_icon.png') no-repeat;
+            //         background-size: cover;
+            //         display: block;
+            //         position: absolute;
+            //         margin-top: -5px;
+            //     }
+            // }
+        }
+
+        
+    }
+}
+
+.research-post {
+    height: 330px;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+
+    a {
+        display: block;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        transition: all 500ms ease-in-out;
+    }
+
+    h3 {
+        font-family: $circular-black;
+        margin-bottom: 0px;
+        transition: all 500ms ease-in-out;
+    }
+
+    p {
+        color: white!important;
+        display: inline-block;
+        opacity: 0;
+        max-height: 0px;
+        margin-top: 0px;
+        transition: all 500ms ease-in-out;
+    }
+
+    &:hover {
+        p {
+            opacity: 1;
+            max-height: 80px;
+        }
+    }
+}
+
+// Research Background Colors
+
+.brand-green {
+    background-color: $brand-green;
+}
+
+.copy-green {
+    background-color: $copy-green;
+}
+
+.green {
+    background-color: $green;
+}
+
+.lighter-green {
+    background-color: $lighter-green;
+}
+
+.black {
+    background-color: $black;
+}
+

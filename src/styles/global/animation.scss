@@ -62,4 +62,19 @@
             }
         }
     }
+
+    .research-post {
+        opacity: 0;
+        @for $i from 1 through 6 {
+            &:nth-child(#{$i}) {
+            animation-delay: 200ms * $i;
+            animation-name: fadeInUp;
+            animation-timing-function: ease-in-out;
+            animation-duration: 1000ms;
+            animation-fill-mode: forwards;
+            }
+        }
+    }
+
+
 }

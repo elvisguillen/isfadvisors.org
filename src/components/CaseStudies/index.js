@@ -92,8 +92,6 @@ export default class CaseStudies extends Component {
                                     <h3>ISF conducted a pre-feasibility study to explore pathways to smallholder coffee input finance in Tanzania and Uganda. ISF engaged with supply chain partners to identify key bottlenecks in the provision of pre-harvest credit, developed solutions to solve these bottlenecks, and offered insight into how industry partners and host government institutions can contribute to solutions.</h3>
                             </div>     
                         
-
-                        
                         <Row>
                             <Col className={this.state.isLeftOpen ? 'open case-study-left' : 'case-study-left'} xs={{size: 12}} lg={{size: 6}}>
                                 <Row>

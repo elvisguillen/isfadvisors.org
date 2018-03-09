@@ -17,11 +17,7 @@
     }
     
     span {
-        background-color: $light-blue;
-        font-size: 28px;
-        padding: 7px;
-        line-height: 1.9;
-        color: $copy-green;
+        @extend .background-span-blue;
     }
 }
 
