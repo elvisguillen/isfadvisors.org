@@ -12,7 +12,7 @@ import ResearchPost from '../components/ResearchPost'
 const ResearchPage = ({transition}) => (
     <div style={transition && transition.style} className='research-page'>
         <PageHero>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Our research and deep sector understanding informs our advisory and implementation work.
         </PageHero>
 
         <PageContent

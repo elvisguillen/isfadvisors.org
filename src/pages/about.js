@@ -9,7 +9,7 @@ import PageCTA from '../components/PageCTA'
 const AboutPage = ({transition}) => (
   <div style={transition && transition.style}>
     <PageHero>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      We're on a mission to transform rural economies.
     </PageHero>
 
     <PageContent

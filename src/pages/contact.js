@@ -42,7 +42,7 @@ export default class ContactPage extends Component {
         
             <div style={this.props.transition && this.props.transition.style} className='contact-page'>
                 <PageHero>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Interested in learning more? <br></br> Send us a note and we'll get in touch.
                 </PageHero>
 
                 <PageContent

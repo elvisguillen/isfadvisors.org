@@ -10,7 +10,7 @@ import PageCTA from '../components/PageCTA'
 const ServicesPage = ({transition}) => (
   <div style={transition && transition.style}>
     <PageHero>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      We build partnerships and financial structures that can drive capital to rural enterprises.
     </PageHero>
 
     <PageContent 

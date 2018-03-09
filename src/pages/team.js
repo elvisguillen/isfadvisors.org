@@ -12,7 +12,7 @@ import team_matt from '../images/Matthew_Shakhovsky.jpg'
 const TeamPage = ({transition}) => (
   <div style={transition && transition.style}>
     <PageHero>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        We're a team committed to transforming ideas into action.
     </PageHero>
 
     <PageContent

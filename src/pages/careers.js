@@ -10,13 +10,13 @@ import PageCTA from '../components/PageCTA'
 const CareerPage = ({transition}) => (
   <div style={transition && transition.style}>
     <PageHero>
-      Careers
+      Like what you see? Join our team to help us transform rural economies
     </PageHero>
 
     <PageContent
       right={
         <div>
-          <h3>ISF currently does not have any job openings. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h3>
+          <h3>We are always looking for committed candidates with the right experience to help us achieve our vision. If you don't see the job opening you're looking for, reach out to us at jobs@ISFadvisors.org and we can chat.</h3>
         </div>
       } />
 

@@ -18,7 +18,7 @@ import photo_case_studies6 from '../images/photo_case_studies6.jpg'
 const PortfolioPage = ({transition}) => (
   <div style={transition && transition.style}>
     <PageHero>
-      Resources
+        Whether facilitating partnerships or building financial structures, our work takes many forms.
     </PageHero>
 
     <PageContent
