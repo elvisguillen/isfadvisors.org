@@ -13,7 +13,7 @@ import hero_page from '../images/hero_page.jpg'
 
 const TeamPage = ({transition}) => (
   <div style={transition && transition.style}>
-    <PageHero heroImage='hero_page'>
+    <PageHero heroImage={hero_page}>
         We're a team committed to transforming ideas into action.
     </PageHero>
 
