@@ -19,19 +19,19 @@ import { Container, Col, Row } from 'reactstrap'
 
 var media = [
     {
-        imgURL: "../static/images/quartz-logo.png",
+        imgURL: "../images/quartz-logo.png",
         quote: "New research from ISF suggests that achieving zero poverty, improving food security, and combating climate change can only be made possible with substantial efforts to help smallholder farmers adapt to climate change and reduce their emissions."
     },
     {
-        imgURL: "../static/images/isf_logo.png",
+        imgURL: "../images/isf_logo.png",
         quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
     },
     {
-        imgURL: "../static/images/hero.jpg",
+        imgURL: "../images/hero.jpg",
         quote: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
-        imgURL: "../static/images/photo_case_studies3.jpg",
+        imgURL: "../images/photo_case_studies3.jpg",
         quote: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     }
 ]
