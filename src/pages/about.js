@@ -36,7 +36,6 @@ const AboutPage = ({transition}) => (
 
         <MediaCoverage/>
       
-     
     </PageAltContent>
 
     <PageCTA>

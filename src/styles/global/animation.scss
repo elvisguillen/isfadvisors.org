@@ -22,6 +22,30 @@
     }
 }
 
+@keyframes refresh {
+    0% {
+        transform: translate3d(0,20px,0);
+        opacity: 0
+    }
+    20% {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+    80% {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+    95% {
+        transform: translate3d(0,-20px,0);
+        opacity: 0
+    }
+    100% {
+        transform: translate3d(0,-20px,0);
+        opacity: 0
+    }
+}
+
+
 
 .fadeInUp {
     opacity: 0;
@@ -35,6 +59,15 @@
     animation-name: fadeInUp-delayed;
     -webkit-animation-name: fadeInUp-delayed;
 }
+
+.refreshing {
+    opacity: 1;
+    animation: refresh 5s ease-in-out infinite;
+    -webkit-animation-name: refresh;
+}
+
+/* @keyframes duration | timing-function | delay | 
+ iteration-count | direction | fill-mode | play-state | name */
 
 .fadeInUp {
     .reason, .case-study {
