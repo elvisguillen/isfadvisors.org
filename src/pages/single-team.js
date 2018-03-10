@@ -8,10 +8,12 @@ import PageCTA from '../components/PageCTA'
 
 import team_matt from '../images/Matthew_Shakhovsky.jpg'
 
+import hero_page from '../images/hero_page.jpg'
+
 const SingleTeamPage = ({transition}) => (
   <div style={transition && transition.style} className='team-member-page'>
-    <PageHero>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <PageHero heroImage={hero_page}>
+      We're a team committed to transforming ideas into action.
     </PageHero>
 
     <PageAltContent title='Team'>
@@ -28,8 +30,8 @@ const SingleTeamPage = ({transition}) => (
 
     <PageCTA>
       <div>
-        <p>Check out our <Link to='/'>case studies</Link> & industry-leading <Link to='/'>research.</Link></p>
-        <p>You can also <Link to='/'>contact us</Link> or sign up for our <Link to='/'>newsletter.</Link></p>
+        <p>Check out our <Link to='/portfolio'>case studies</Link> & industry-leading <Link to='/research'>research.</Link></p>
+        <p>You can also <Link to='/contact'>contact us</Link> or sign up for our <Link to='/contact'>newsletter.</Link></p>
       </div>
     </PageCTA>
   </div>

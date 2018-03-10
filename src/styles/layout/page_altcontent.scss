@@ -18,10 +18,8 @@
     }
 
     span {
+        @extend .background-span-blue;
         background-color: $brand-green;
-        font-size: 28px;
-        line-height: 1.9;
-        padding: 7px;
         color: $tan;
     }
 

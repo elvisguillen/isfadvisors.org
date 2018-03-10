@@ -7,6 +7,7 @@ import { slide as Menu } from 'react-burger-menu'
 
 import Header from '../components/Header'
 import '../styles/index.scss'
+import isf_mt_icon from '../images/isf_mt_icon.png'
 
 export default class TemplateWrapper extends Component {
   constructor(props) {
@@ -43,15 +44,16 @@ export default class TemplateWrapper extends Component {
         
         <Menu isOpen={this.state.menuOpen} onStateChange={(state) => this.handleStateChange(state)} right width={ '100%' } >
           <Container>
-          <Row>
-            <Col xs={{size: 12}}>
-              <Link onClick={() => this.closeMenu()} className='menu-item' to='/'>Home</Link>
-              <Link onClick={() => this.closeMenu()} className='menu-item' to='/about'>About Us</Link>
-              <Link onClick={() => this.closeMenu()} className='menu-item' to='/services'>Services</Link>
-              <Link onClick={() => this.closeMenu()} className='menu-item' to='/research'>Research</Link>
-              <Link onClick={() => this.closeMenu()} className='menu-item' to='/contact'>Contact</Link>
-            </Col>
-          </Row>
+            <Row>
+              <Col xs={{size: 12}}>
+                <Link onClick={() => this.closeMenu()} className='menu-item' to='/'>Home</Link>
+                <Link onClick={() => this.closeMenu()} className='menu-item' to='/about'>About Us</Link>
+                <Link onClick={() => this.closeMenu()} className='menu-item' to='/services'>Services</Link>
+                <Link onClick={() => this.closeMenu()} className='menu-item' to='/research'>Research</Link>
+                <Link onClick={() => this.closeMenu()} className='menu-item' to='/contact'>Contact</Link>
+              </Col>
+            </Row>
+            <img className='img-fluid nav-icon' src={isf_mt_icon}/>
           </Container>
         </Menu>
 

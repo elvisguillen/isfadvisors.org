@@ -15,10 +15,12 @@ import photo_case_studies4 from '../images/photo_case_studies4.jpg'
 import photo_case_studies5 from '../images/photo_case_studies5.jpg'
 import photo_case_studies6 from '../images/photo_case_studies6.jpg'
 
+import hero_page from '../images/hero_page_2.jpg'
+
 const PortfolioPage = ({transition}) => (
   <div style={transition && transition.style}>
-    <PageHero>
-      Resources
+    <PageHero heroImage={hero_page}>
+        Whether facilitating partnerships or building financial structures, our work takes many forms.
     </PageHero>
 
     <PageContent
@@ -74,8 +76,8 @@ const PortfolioPage = ({transition}) => (
 
     <PageCTA>
       <div>
-        <p>Check out our <Link to='/'>case studies</Link> & industry-leading <Link to='/'>research.</Link></p>
-        <p>You can also <Link to='/'>contact us</Link> or sign up for our <Link to='/'>newsletter.</Link></p>
+        <p>Want to learn more?</p>
+        <p><Link to='/contact'>Contact us</Link> or sign up for our <Link to='/contact'>newsletter.</Link></p>
       </div>
     </PageCTA>
   </div>

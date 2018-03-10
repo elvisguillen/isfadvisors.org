@@ -8,9 +8,11 @@ import PageCTA from '../components/PageCTA'
 import PageBriefings from '../components/PageBriefings';
 import Reveal from 'react-reveal/Reveal'
 
+import hero_page from '../images/hero_page_2.jpg'
+
 const ResourcesPage = ({transition}) => (
   <div style={transition && transition.style}>
-    <PageHero>
+    <PageHero heroImage={hero_page}>
       Resources
     </PageHero>
 
@@ -55,8 +57,8 @@ const ResourcesPage = ({transition}) => (
 
     <PageCTA>
       <div>
-        <p>Check out our <Link to='/'>case studies</Link> & industry-leading <Link to='/'>research.</Link></p>
-        <p>You can also <Link to='/'>contact us</Link> or sign up for our <Link to='/'>newsletter.</Link></p>
+      <p>Check out our <Link to='/portfolio'>case studies</Link> & industry-leading <Link to='/research'>research.</Link></p>
+        <p>You can also <Link to='/contact'>contact us</Link> or sign up for our <Link to='/contact'>newsletter.</Link></p>
       </div>
     </PageCTA>
   </div>

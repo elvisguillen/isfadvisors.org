@@ -9,10 +9,12 @@ import TeamMember from '../components/TeamMember'
 
 import team_matt from '../images/Matthew_Shakhovsky.jpg'
 
+import hero_page from '../images/hero_page.jpg'
+
 const TeamPage = ({transition}) => (
   <div style={transition && transition.style}>
-    <PageHero>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <PageHero heroImage='hero_page'>
+        We're a team committed to transforming ideas into action.
     </PageHero>
 
     <PageContent

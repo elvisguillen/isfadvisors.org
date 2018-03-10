@@ -47,6 +47,10 @@ a.underline {
   font-size: 18px;
 }
 
+.bold {
+  font-family: $circular-air!important;
+}
+
 .container {
   padding-left: 45px;
   padding-right: 45px;
@@ -84,9 +88,10 @@ button {
 .background-span-blue {
   background-color: $light-blue;
   font-size: 34px;
-  padding: 7px;
+  padding: 7px $gutter/2;
   line-height: 1.9;
   color: $copy-green;
+  text-align: center;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }

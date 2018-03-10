@@ -9,6 +9,8 @@ import PageBriefings from '../components/PageBriefings'
 import ReactMapGL, {Marker} from 'react-map-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
 
+import hero_page from '../images/hero_page_2.jpg'
+
 export default class ContactPage extends Component {
 
     state = {
@@ -41,8 +43,8 @@ export default class ContactPage extends Component {
         return (
         
             <div style={this.props.transition && this.props.transition.style} className='contact-page'>
-                <PageHero>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <PageHero heroImage={hero_page}>
+                    Interested in learning more? <br></br> Send us a note and we'll get in touch.
                 </PageHero>
 
                 <PageContent
@@ -146,8 +148,8 @@ export default class ContactPage extends Component {
 
                 <PageCTA>
                     <div>
-                        <p>Check out our <Link to='/'>case studies</Link> & industry-leading <Link to='/'>research.</Link></p>
-                        <p>You can also <Link to='/'>contact us</Link> or sign up for our <Link to='/'>newsletter.</Link></p>
+                        <p>Want to learn more?</p>
+                        <p>Check out our <Link to='/portfolio'>case studies</Link> & industry-leading <Link to='/research'>research.</Link></p>
                     </div>
                 </PageCTA>
             </div>
