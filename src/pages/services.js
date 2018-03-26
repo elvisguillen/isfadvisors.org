@@ -21,7 +21,8 @@ const ServicesPage = ({transition}) => (
       } 
       right={
         <div>
-        <h3>In our experience, financial institutions working alone are rarely able to address the financial service needs of rural enterprises and farmers in emerging economies.</h3>
+        <h3>ISF’s primary role is to act as a design catalyst. The emphasis is on mobilizing additional financing for rural enterprises and seeding replication of innovative models.</h3>
+        <p>ISF has completed projects with a wide variety of public and private sector partners, including Airtel, Bill and Melinda Gates Foundation, Council on Smallholder Agricultural Finance, Dalberg Global Development Advisors, Esoko, IDH Sustainable Trade Initiative, International Fund for Agricultural Development (IFAD), KfW/DEG, Komaza, MIX Market, Opportunity International, Partners in Food Solutions, Rabobank, Rockefeller Foundation, TechnoServe, USAID, Vodacom, World Cocoa Foundation, and World Food Programme. </p>
         <p>Serving this market requires multiple organizations working together to deliver a suite of services that mitigate risk and reduce the cost of delivery. However, market actors frequently lack the capacity, dedicated resources, or incentive to focus on the development of these structures until there is a refined business concept, an engaged set of investors, and complementary partners interested in moving forward. Moreover, even with the right set of partners engaged, rural finance is inherently risky and complex, which means investors tend to focus on larger or easier deals in sectors such as manufacturing, infrastructure, and housing. Wider adoption of blended finance models – the use of grant and concessional funding to mobilize private capital and make investments more financially viable – is essential to responding to the funding needs of rural enterprises.</p>
         </div>
       } />
@@ -39,7 +40,7 @@ const ServicesPage = ({transition}) => (
       </Row>
     </PageAltContent>
 
-    <PageContent
+    <PageContent id='no-left-content'
       right={
         <div>
           <h3>ISF’s primary role is to act as a design catalyst. The emphasis is on mobilizing additional financing for rural enterprises and seeding replication of innovative models. </h3>

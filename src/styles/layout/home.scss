@@ -55,9 +55,9 @@
         height: -webkit-calc(100vh);
         height:    -moz-calc(100vh);
         height:         calc(100vh);
-        width: -webkit-calc(50vw);
-        width:    -moz-calc(50vw);
-        width:         calc(50vw);
+        width: -webkit-calc(100vw);
+        width:    -moz-calc(100vw);
+        width:         calc(100vw);
         position: absolute;
         background-color: rgba(0,0,0,0.8);
         opacity: 0;
@@ -80,9 +80,6 @@
         }
 
         &.open-right {
-            right: -webkit-calc(-50vw);
-            right:    -moz-calc(-50vw);
-            right:         calc(-50vw);
             opacity: 1!important;
             z-index: 1!important;
         }
@@ -94,9 +91,6 @@
         }
 
         &.open-left {
-            left: -webkit-calc(-50vw);
-            left:    -moz-calc(-50vw);
-            left:         calc(-50vw);
             opacity: 1!important;
             z-index: 1!important;
         }
@@ -106,12 +100,24 @@
             left:    -moz-calc(-50vw);
             left:         calc(-50vw);
         }
+        
+        h1 {
+            font-family: $circular-book;
+        }
+        
+        h2 {
+            font-family: $circular-book;
+            &.overlay-copy {
+                margin-top: $gutter - 20;
+            }
+        }
     }
     
     
     .case-study {
         cursor: pointer;
         transition: all 300ms ease-in-out;
+        height: 50vh;
 
         .case-study-image {
             display: flex;
@@ -127,99 +133,13 @@
             }
         }
 
-        &.tall-height {
-            height: -webkit-calc(60vh);
-            height:    -moz-calc(60vh);
-            height:         calc(60vh);
-            overflow: hidden;
-            z-index: 0;
-
-            &:hover {
-                height: -webkit-calc(100vh);
-                height:    -moz-calc(100vh);
-                height:         calc(100vh);
-                overflow: hidden;
-                top: 0px;
-                
-                &.left {
-                    margin-top: -40vh
-                }
-
-                &.right {
-                    z-index: 2;
-                }
-
-                & + .right-contained {
-                    bottom: -40vh;
-                }
-                
-            }
-        }
-
-        &.small-height {
-            height: -webkit-calc(40vh);
-            height:    -moz-calc(40vh);
-            height:         calc(40vh);
-            overflow: hidden;
-
-            .case-study-image {
-                display: flex;
-                height: 100%;
-                img {
-                    height: 100%;
-                    object-fit: cover;
-                    width: 100%;
-                }
-            }
-
-            .top {
-                order: 1;
-            }
-            
-            &.right-contained {
-                position: absolute;
-                right: 0px;
-                z-index: 0;
-            }
-            
-            &.right {
-                &.right-contained {
-                    bottom: 0px;
-                }
-            }
-
-            &:hover {
-                height: -webkit-calc(100vh)!important;
-                height:    -moz-calc(100vh)!important;
-                height:         calc(100vh)!important;
-                max-width: 100% !important;
-                flex: 0 0 100%;
-
-                &.right {
-                    margin-top: -60vh;
-                }
-
-                &.right-contained {
-                    z-index: 10;
-                }
-
-                &.left-contained {
-                    z-index: 20;
-                    display: block;
-                }
-
-            }
-
-            
-        }
-
         &:hover {
             .case-study-copy {
                 transition: all 500ms ease-in-out;
                 transition-delay: 200ms;
-                height: -webkit-calc(40vh);
-                height:    -moz-calc(40vh);
-                height:         calc(40vh);
+                height: -webkit-calc(50vh);
+                height:    -moz-calc(50vh);
+                height:         calc(50vh);
                 bottom: 0;
                 opacity: 1;
             }
@@ -232,11 +152,11 @@
             background-color: $lighter-green;
             left: 0px;
             width: 100%;
-            height: -webkit-calc(30vh);
-            height:    -moz-calc(30vh);
-            height:         calc(30vh);
+            height: -webkit-calc(50vh);
+            height:    -moz-calc(50vh);
+            height:         calc(50vh);
             transition: all 500ms ease-in-out;
-            bottom: -30vh;
+            bottom: -50vh;
             display: flex;
             align-items: center;
             justify-content: center;

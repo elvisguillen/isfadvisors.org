@@ -18,14 +18,17 @@ const BriefingsPage = ({transition}) => (
 
     <PageContent
         left={
+            <div>
             <Link to='/resources'><button>Resources</button></Link>
-            
+            <Link to='/research'><button className='border-top-none'>Back</button></Link>
+            </div>
         }
         right={
         <div>
             <Reveal effect='fadeInUp'>
                 <PageBriefings
                     subtitle='Briefing 15'
+                    isLink={true}
                     title='The fund manager perspective: Moving the needle on inclusive agribusiness investment'
                     copy='This briefing note interrogate how different impact-oriented agribusiness funds combine public and private capital to build a more inclusive agricultural market.'
                 />
@@ -33,6 +36,7 @@ const BriefingsPage = ({transition}) => (
             <Reveal effect='fadeInUp'>
                 <PageBriefings 
                     subtitle='Briefing 14'
+                    isLink={true}
                     title='Financial inclusion fit to size: Customizing digital credit for smallholders in Tanzania'
                     copy='This briefing note explores the causes of low uptake in digital credit for smallholders to better understand how we can develop concrete product solutions to jump-start adoption of digital credit products by them.'
                 />
@@ -40,6 +44,7 @@ const BriefingsPage = ({transition}) => (
             <Reveal effect='fadeInUp'>
                 <PageBriefings 
                     subtitle='Briefing 13'
+                    isLink={true}
                     title='The Climate Conundrum: Financing smallholder productivity and resilience in the age of climate change'
                     copy='This briefing note explores the latest practices from the climate finance community and the agricultural finance community to understand how new combined models can boost returns and attract new investors.'
                 />

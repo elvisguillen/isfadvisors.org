@@ -5,8 +5,8 @@
         font-size: 18px;
         background-color: white;
         border-radius: 0px;
-        border: 2px solid $black!important;
-        padding: 23px;
+        border: 0px;
+        padding: 18px 25px;
         border: #e5e5e5;
         color: $black!important;
         &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -26,6 +26,7 @@
     #inputComment {
         min-height: 200px;
     }
+    
 
 }
 

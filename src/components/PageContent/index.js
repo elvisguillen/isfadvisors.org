@@ -3,10 +3,10 @@ import { Container, Col, Row } from 'reactstrap'
 import Reveal from 'react-reveal/Reveal'
 
 const PageContent = (props) => (
-    <section className='page-content'>
+    <section id={props.id} className='page-content'>
       <Container>
         <Row>
-            <Col className='page-content-left' xs='12' lg={{size: 3, offset: 1}}>
+            <Col className='page-content-left' xs='12' lg={{size: 4, offset: 0}}>
                 <Reveal effect='fadeInUp'>
                     {props.left}
                 </Reveal>

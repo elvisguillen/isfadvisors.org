@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const CaseStudy = (props) => {
     return (
-        <Col className={`case-study ${props.panel} ${props.location} ${props.size} ${props.linkClassName} ${props.isActive ? 'active' : ''} `} xs={{size: 12}} lg={props.size === 'small-height' && props.location === 'left-contained' ? '5' : '7' && props.size === 'tall-height' ? '12' : '7'} 
+        <Col className={`case-study ${props.panel} ${props.location} ${props.size} ${props.linkClassName} ${props.isActive ? 'active' : ''} `} xs={{size: 12}} 
             onClick={(event) => {
                 event.preventDefault();
                 props.onClick(props.tabIndex);

@@ -17,13 +17,13 @@ const IndexPage = ({transition}) => (
     <section className='intro'>
       <Container>
         <Row>
-          <Col xs='12' lg={{size: 4, offset: 1}} >
+          <Col xs='12' lg={{size: 4, offset: 0}} >
             <Reveal effect='fadeInUp'>
               <p>Combining industry leading research with hands-on technical expertise, ISF develops practical, profitable, and sustainable financial solutions.</p>
               <Link to='/services'><button>Services</button></Link>
             </Reveal>
           </Col>
-          <Col xs='12' lg={{size: 6, offset: 1}} xl={{size: 5, offset: 1}} className='intro_photo'>
+          <Col xs='12' lg={{size: 6, offset: 2}} xl={{size: 5, offset: 2}} className='intro_photo'>
             <Reveal effect='fadeInUp'>
               <img className='img-fluid d-none d-lg-block' src={intro_photo} />
             </Reveal>
@@ -45,7 +45,7 @@ const IndexPage = ({transition}) => (
           <Row>
               <Col xs='12' lg='4' className='reason'>
                 <h2>Food Security</h2>
-                <p>for a world population of xx billion by 2050</p>
+                <p>for a world population of 9 billion by 2050</p>
               </Col>
               <Col xs='12' lg='4' className='reason'>
                 <h2>Poverty Alleviation</h2>

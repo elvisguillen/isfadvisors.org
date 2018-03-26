@@ -74,12 +74,30 @@ export default class ContactPage extends Component {
                                 <FormGroup>
                                     <Input type='text' name='subject' id='inputSubject' placeholder='Organization' />
                                 </FormGroup>
+                                
+                                <Row>
+                                    <Col xs='12' md='6'>
+                                        <FormGroup>
+                                            <Input type='text' name='subject' id='inputSubject' placeholder='Job Title' />
+                                        </FormGroup>
+                                    </Col>
+                                    <Col xs='12' md='6'>
+                                        <FormGroup>
+                                            <Input type='text' name='subject' id='inputSubject' placeholder='Country' />
+                                        </FormGroup>
+                                    </Col>
+                                </Row>
+
+                                <FormGroup>
+                                    <Input type='text' name='subject' id='inputSubject' placeholder='Type of Organization' />
+                                </FormGroup>
+
                                 <FormGroup>
                                     <Input type='text' name='subject' id='inputSubject' placeholder='How Did You Hear About ISF?' />
                                 </FormGroup>
 
                                 {/* <FormGroup>
-                                    <Input type='text' name='subject' id='inputSubject' placeholder='How Did You Hear About ISF?'>
+                                    <Input type='select' name='subject' id='inputSubject' placeholder='How Did You Hear About ISF?'>
                                         <option>1</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -89,10 +107,7 @@ export default class ContactPage extends Component {
                                 </FormGroup> */}
 
                                 <FormGroup>
-                                    <Input type='text' name='subject' id='inputSubject' placeholder='Type of Organization' />
-                                </FormGroup>
-                                <FormGroup>
-                                    <button type='submit'>Submit ›</button>
+                                    <button className='float-right' type='submit'>Submit</button>
                                 </FormGroup>
 
                             </form>

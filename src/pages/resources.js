@@ -18,7 +18,9 @@ const ResourcesPage = ({transition}) => (
 
     <PageContent
         left={
-            <Link to='/briefings'><button>Briefings</button></Link>
+            <div>
+                <Link to='/research'><button>Back</button></Link>
+            </div>
         }
         right={
         <div>

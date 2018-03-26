@@ -11,6 +11,7 @@
     "gatsby-plugin-sass": "^1.0.17",
     "react-burger-menu": "^2.2.3",
     "react-helmet": "^5.2.0",
+    "react-infinite-scroller": "^1.1.3",
     "react-map-gl": "^3.2.4",
     "react-reveal": "1.1.7",
     "react-scroll": "^1.7.7",

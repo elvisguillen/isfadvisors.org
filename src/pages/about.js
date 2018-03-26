@@ -21,12 +21,10 @@ const AboutPage = ({transition}) => (
     }
     right={
       <div>
-        <h3>ISF is housed within the Global Development Incubator (GDI) and shares GDI’s commitment to building effective partnerships that make a significant and lasting impact. GDI is an organization that builds startups, incubates partnerships, and strengthens existing organizations for social impact around the world.</h3>
+        <h3>ISF is an advisory group committed to transforming rural economies by delivering partnerships and investment structures that promote financial inclusion for rural enterprises and smallholder farmers. Combining industry-leading research with hands-on technical expertise, ISF develops practical, profitable, and sustainable financial solutions.</h3>
+        <p>ISF is housed within the Global Development Incubator (GDI) and shares GDI’s commitment to building effective partnerships that make a significant and lasting impact. GDI is an organization that builds startups, incubates partnerships, and strengthens existing organizations for social impact around the world.</p>
         <p>
           ISF’s advisory committee consists of leading funders and practitioners in the rural financial inclusion space, specifically ANDE, Bill and Melinda Gates Foundation, Business Fights Poverty, CGAP, Citi Foundation, Ford Foundation, IDH, MasterCard Foundation, One Acre Fund, Root Capital, Skoll Foundation, Small Foundation, TechnoServe, and USAID. 
-        </p>
-        <p>
-          ISF has completed projects with a wide variety of public and private sector partners, including Airtel, Bill and Melinda Gates Foundation, Council on Smallholder Agricultural Finance, Dalberg Global Development Advisors, Esoko, IDH Sustainable Trade Initiative, International Fund for Agricultural Development (IFAD), KfW/DEG, Komaza, MIX Market, Opportunity International, Partners in Food Solutions, Rabobank, Rockefeller Foundation, TechnoServe, USAID, Vodacom, World Cocoa Foundation, and World Food Programme. 
         </p>
         <p>
           ISF regularly co-sponsors research and publishes insights with the Rural and Agricultural Finance Learning Lab.

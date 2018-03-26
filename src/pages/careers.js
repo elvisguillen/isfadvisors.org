@@ -18,7 +18,7 @@ const CareerPage = ({transition}) => (
     <PageContent
       right={
         <div>
-          <h3>We are always looking for committed candidates with the right experience to help us achieve our vision. If you don't see the job opening you're looking for, reach out to us at jobs@ISFadvisors.org and we can chat.</h3>
+          <h3>We are always looking for committed candidates with the right experience to help us achieve our vision. If you don't see the job opening you're looking for, reach out to us at jobs@ISFadvisors.org.</h3>
         </div>
       } />
 

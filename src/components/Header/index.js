@@ -12,15 +12,26 @@ const Header = (logo) => (
         </Col>
 
         <Col lg='8' className='d-none d-lg-block main-nav'>
-  
-            <Link to='/about' className='nav-item float-lg-left' activeClassName="active">About</Link>
-          
-            <Link to='/services' className='nav-item float-lg-left' activeClassName="active">Services</Link>
+            
+            <div className='main-nav-wrapper'>
+              <Link to='/about' className='nav-item float-lg-left' activeClassName="active">About</Link>
+              <Link id='team' to='/team' className='sub-nav-item float-lg-left' activeClassName="active">Team</Link>
+            </div>
 
-            <Link to='/research' className='nav-item float-lg-left'activeClassName="active">Research</Link>
-          
-            <Link to='/contact' className='nav-item float-lg-left' activeClassName="active">Contact</Link>
+            <div className='main-nav-wrapper'>
+              <Link to='/services' className='nav-item float-lg-left' activeClassName="active">Services</Link>
+              <Link id='portfolio' to='/portfolio' className='sub-nav-item float-lg-left' activeClassName="active">Portfolio</Link>
+            </div>
 
+            <div className='main-nav-wrapper'>
+              <Link to='/research' className='nav-item float-lg-left'activeClassName="active">Research</Link>
+              <Link id='briefings' to='/resources' className='sub-nav-item float-lg-left' activeClassName="active">Resources</Link>
+            </div>
+
+            <div className='main-nav-wrapper'>
+              <Link to='/contact' className='nav-item float-lg-left' activeClassName="active">Contact</Link>
+            </div>
+            
         </Col>
       </Row>
     </Container>

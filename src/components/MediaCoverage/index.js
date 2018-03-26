@@ -23,15 +23,15 @@ var media = [
         quote: "New research from ISF suggests that achieving zero poverty, improving food security, and combating climate change can only be made possible with substantial efforts to help smallholder farmers adapt to climate change and reduce their emissions."
     },
     {
-        imgURL: "../../images/isf_logo.png",
+        imgURL: "../../images/quartz.svg",
         quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
     },
     {
-        imgURL: "../../images/hero.jpg",
+        imgURL: "../../images/quartz.svg",
         quote: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
-        imgURL: "../../images/photo_case_studies3.jpg",
+        imgURL: "../../images/quartz.svg",
         quote: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     }
 ]
@@ -108,22 +108,21 @@ class MediaCoverage extends Component {
         // this.refresh();
 
     return (
-        <Row xs='12' className="media-coverage">
+        <Row className="media-coverage">
 
         <Col xs='12' className={`slider-content ${(this.state.refreshing === true ? `refreshing` : ``)}`}>
-            <Col xs='12' md='4' lg='5' className="img-block" style={{backgroundImage: `url(${media[this.state.currentSlide].imgURL})`}}>
-            </Col>
+            <Col xs='12' md='4' lg='5' className="img-block" style={{backgroundImage: `url(${media[this.state.currentSlide].imgURL})`}}/>
             <Col xs='12' md='8' lg='7' className="quote">
-            <p>"{media[this.state.currentSlide].quote}"</p>
+                <p>"{media[this.state.currentSlide].quote}"</p>
             </Col>
         </Col>
 
         <Col xs='12' className="slider-location">
             <div className="dots">
                 {
-                    media.map(item => {
+                    media.map((item, i) => {
                         return (
-                            <div onClick={() => this.switchSlide(media.indexOf(item))} className={`indicator-dot ${(this.state.currentSlide === media.indexOf(item) ? `current` : ``)}`}></div>
+                            <div key={i} onClick={() => this.switchSlide(media.indexOf(item))} className={`indicator-dot ${(this.state.currentSlide === media.indexOf(item) ? `current` : ``)}`}></div>
                         )
                     })
                 }

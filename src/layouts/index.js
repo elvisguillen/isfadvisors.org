@@ -46,14 +46,32 @@ export default class TemplateWrapper extends Component {
           <Container>
             <Row>
               <Col xs={{size: 12}}>
-                <Link onClick={() => this.closeMenu()} className='menu-item' to='/'>Home</Link>
-                <Link onClick={() => this.closeMenu()} className='menu-item' to='/about'>About Us</Link>
-                <Link onClick={() => this.closeMenu()} className='menu-item' to='/services'>Services</Link>
-                <Link onClick={() => this.closeMenu()} className='menu-item' to='/research'>Research</Link>
-                <Link onClick={() => this.closeMenu()} className='menu-item' to='/contact'>Contact</Link>
+                <div className='menu-item-wrapper'>
+                  <Link onClick={() => this.closeMenu()} className='menu-item' to='/'>Home</Link>
+                </div>
+                
+                <div className='menu-item-wrapper'>
+                  <Link onClick={() => this.closeMenu()} className='menu-item' to='/about'>About Us</Link>
+                  <Link onClick={() => this.closeMenu()} className='sub-menu-item' to='/team'>Team</Link>
+                </div>
+
+                <div className='menu-item-wrapper'>
+                  <Link onClick={() => this.closeMenu()} className='menu-item' to='/services'>Services</Link>
+                  <Link onClick={() => this.closeMenu()} className='sub-menu-item' to='/team'>Portfolio</Link>
+                </div>
+
+                <div className='menu-item-wrapper'>
+                  <Link onClick={() => this.closeMenu()} className='menu-item' to='/research'>Research</Link>
+                  <Link onClick={() => this.closeMenu()} className='sub-menu-item' to='/team'>Briefings</Link>
+                  <Link onClick={() => this.closeMenu()} className='sub-menu-item' to='/team'>Resources</Link>
+                </div>
+
+                <div className='menu-item-wrapper'>
+                  <Link onClick={() => this.closeMenu()} className='menu-item' to='/contact'>Contact</Link>
+                </div>
+
               </Col>
             </Row>
-            <img className='img-fluid nav-icon' src={isf_mt_icon}/>
           </Container>
         </Menu>
 

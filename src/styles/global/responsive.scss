@@ -19,6 +19,20 @@
 }
 @include media-breakpoint-up(md) { 
 
+    .bm-menu {
+        .menu-item-wrapper {
+            margin-bottom: 26px;
+
+            .menu-item {
+                font-size: 34px;
+                margin-bottom: $mobile-gutter/2;
+            }
+            .sub-menu-item {
+                font-size: 28px;
+            }
+        }
+    }
+
 }
 @include media-breakpoint-up(lg) {
     .hero {
@@ -34,8 +48,14 @@
         }
     }
 
+    .background-span-blue {
+        padding: 7px $gutter/2;
+    }
+
     .page-content-left {
+        text-align: center;
         button {
+            margin-right: 28px;
             &:nth-of-type(1) {
             margin-top: -3px;
             }
@@ -50,20 +70,30 @@
         padding-right: 15px;
     }
     .main-header {
-        z-index: 100000;
+        z-index: 1001;
         position: relative;
 
         .main-nav {
             margin-top: 22px;
-            .nav-item {
-                padding-left: 10px;
-                padding-right: 10px;
-                &:first-of-type {
-                    padding-left: 44px;
-                }
-                &:last-of-type {
-                    padding-right: 43px;
-                }
+                .main-nav-wrapper {
+
+                    .nav-item {
+                        padding: 0px 10px;
+                    }
+
+                    &:first-of-type {
+                        .nav-item {
+                            padding-left: 44px;
+                        }
+                        
+                        .sub-nav-item {
+                            padding-left: 44px;
+                        }
+                    }
+
+                    &:last-of-type .nav-item {
+                        padding-right: 43px;
+                    }
             }
         }
     }
@@ -88,7 +118,7 @@
 
     .case-studies {
         .overlay {
-            padding: $gutter;
+            padding: $gutter 180px;
         }
         .case-study {
             padding-left:0px;
@@ -104,6 +134,7 @@
             }
         }
     }
+    
     .bm-menu-wrap {
         width: 40%!important;
     }
@@ -150,13 +181,46 @@
 
         .main-nav {
             margin-top: 42px;
-            .nav-item {
-                padding-left: 25px;
-                padding-right: 25px;
-                &:first-of-type {
-                    padding-left: 58px;
+
+            .main-nav-wrapper {
+
+                .nav-item {
+                    padding: 0px 25px;
                 }
-                &:last-of-type {
+
+                &:first-of-type {
+                    .nav-item {
+                        padding-left: 58px;
+                    }
+                    
+                    .sub-nav-item {            
+                        padding-left: 34px;
+                        padding-right: 38px;
+                    }
+                }
+                
+                .sub-nav-item {
+                    &#team {
+                        padding-left: 66px;
+                        padding-right: 69px;
+                    }
+                    &#portfolio {
+                        padding-left: 36px;
+                        padding-right: 36px;
+                    }
+                    &#briefings {
+                        padding-left: 39px;
+                        padding-right: 38px;
+                    }
+                    &#research {
+                        bottom: -92px;
+                        padding-left: 45px;
+                        padding-right: 45px;
+                    }
+                }
+
+
+                &:last-of-type .nav-item {
                     padding-right: 59px;
                 }
             }
@@ -165,7 +229,7 @@
 
     .case-studies {
         .overlay {
-            padding: $gutter + 30;
+            padding: $gutter + 30 300px;
         }
         .case-study {
             .case-study-copy {
@@ -201,7 +265,7 @@
 @media (min-width: 1600px) {
     .case-studies {
         .overlay {
-            padding: $gutter * 2;
+            padding: $gutter * 2 395px;
         }
     }
 }

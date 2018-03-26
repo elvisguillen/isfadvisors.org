@@ -1,12 +1,3 @@
-.research-page {
-    .rural-farmers {
-        .rural-farmers-reasons {
-            position: relative;
-            padding: 0px 30px!important;
-        }
-    }
-}
-
 .modal-research {
     background-color: white;
     position: absolute;
@@ -82,7 +73,7 @@
 
 .research-post {
     height: 330px;
-    padding: 50px;
+    padding: 100px;
     text-align: center;
     color: white;
     z-index: 1;
@@ -124,6 +115,13 @@
         }
     }
 }
+
+.research-page {
+    .rural-farmers-reasons {
+        padding: $gutter $gutter+30;
+    }
+}
+
 
 // Research Background Colors
 

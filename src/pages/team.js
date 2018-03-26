@@ -18,6 +18,9 @@ const TeamPage = ({transition}) => (
     </PageHero>
 
     <PageContent
+    left={
+        <Link to='/about'><button>Back</button></Link>
+    }
     right={
       <div>
         <h3>ISF’s team is a unique combination of professionals with backgrounds in strategy consulting, investment banking, impact investing, and rural economic development. </h3>

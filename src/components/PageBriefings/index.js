@@ -15,7 +15,15 @@ const PageBriefings = (props) => (
             <h4 className='subtitle'>{props.subtitle}</h4>
         ) : ('')}
         {props.title ? (
-            <h3><Link to='/' className='post-title'>{props.title}</Link></h3>
+            <h3> 
+                {props.isLink === true ? (
+                    <Link to='/' className='post-title'>
+                        {props.title}
+                    </Link>
+                ) : (
+                    `${props.title}`
+                )}
+            </h3>
         ) : ('')}
         <p>{props.copy}</p>
     </div>

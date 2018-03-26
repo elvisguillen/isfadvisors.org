@@ -23,54 +23,118 @@
     background-color: $black;
     padding: 0px;
 
-    .nav-item {
-        font-family: $circular-black;
-        font-size: 18px;
-        color: $black;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        padding-left: 25px;
-        padding-right: 25px;
-        margin-right: 42px;
+    .main-nav-wrapper {
         height: 100%;
-        display: flex;
-        align-items: center;
-        background-color: $tan;
-        position: relative;
-        transition: all 500ms ease-in-out;
-        
-        &::before {
-            background: none;
-            border-left: 40px solid transparent;
-            border-right: 0px solid transparent;
-            border-top: 61px solid $tan;
-            content: "";
-            left: -40px;
-            position: absolute;
-            top: 0;
-            transition: all 500ms ease-in-out;
-        }
-        
-        &::after {
-            border-left: 0px solid transparent;
-            border-right: 40px solid transparent;
-            border-bottom: 61px solid $tan;
-            content: "";
-            height: 0;
-            position: absolute;
-            right: -40px;
-            top: 0;
-            width: 0;
-            transition: all 500ms ease-in-out;
-        }
+        float: left;
 
-        &:first-of-type {
-            padding-left: 54px;
+        .nav-item {
+            font-family: $circular-black;
+            font-size: 18px;
+            color: $black;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding-left: 25px;
+            padding-right: 25px;
+            margin-right: 42px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            background-color: $tan;
+            position: relative;
+            transition: all 500ms ease-in-out;
+            
             &::before {
-                display: none;
+                background: none;
+                border-left: 40px solid transparent;
+                border-right: 0px solid transparent;
+                border-top: 61px solid $tan;
+                content: "";
+                left: -40px;
+                position: absolute;
+                top: 0;
+                transition: all 500ms ease-in-out;
+            }
+            
+            &::after {
+                border-left: 0px solid transparent;
+                border-right: 40px solid transparent;
+                border-bottom: 61px solid $tan;
+                content: "";
+                height: 0;
+                position: absolute;
+                right: -40px;
+                top: 0;
+                width: 0;
+                transition: all 500ms ease-in-out;
+            }
+            
+            &.active {
+                background: $light-blue;
+                color: $black;
+                &::before {
+                    border-top: 61px solid $light-blue;
+                }
+                &::after {
+                    border-bottom: 61px solid $light-blue;
+                }
+            }
+            
+            a {
+                color: $black;
+                margin-top: 15px;
+                display: inline-block;
+            }
+    
+            &:hover {
+                background-color: $light-blue;
+                color: $black;
+
+                ~ .sub-nav-item {
+                    opacity: 1;
+                }
+
+                &::before {
+                    border-top-color: $light-blue;
+                }
+                &::after {
+                    border-bottom-color: $light-blue;
+                }
             }
         }
-        &:last-of-type {
+
+        .sub-nav-item {
+            @extend .nav-item;
+            &:before, &:after {
+                display: none;
+            }
+            position: absolute;
+            background-color: $tan;
+            height: 45px;
+            bottom: -47px;
+            border: 2px solid black;
+            border-top: 0px;
+            margin-left: -2px;
+            opacity: 0;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+        
+
+        &:first-of-type {
+            .sub-nav-item {
+                padding-left: 66px;
+            }
+            .nav-item {
+                padding-left: 54px;
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        &:last-of-type .nav-item {
             padding-right: 54px;
             margin-right: 0px!important;
 
@@ -78,34 +142,7 @@
                 display: none;
             }
         }
-
-        &.active {
-            background: $green;
-            color: $tan;
-            &::before {
-                border-top: 61px solid $green;
-            }
-            &::after {
-                border-bottom: 61px solid $green;
-            }
-        }
-        
-        a {
-            color: $black;
-            margin-top: 15px;
-            display: inline-block;
-        }
-
-        &:hover {
-            background-color: $light-blue;
-            color: $black;
-            &::before {
-                border-top-color: $light-blue;
-            }
-            &::after {
-                border-bottom-color: $light-blue;
-            }
-        }
     }
+    
 }
 
