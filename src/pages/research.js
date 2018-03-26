@@ -140,16 +140,19 @@ class ResearchPage extends Component {
     }
 
     update() {
-        const distanceToBottom = document.documentElement.offsetHeight - (window.scrollY + window.innerHeight)
-        if (this.state.showingMore && distanceToBottom < 500) {
-            this.setState({loading: true})
-            setTimeout(function() {
-                this.setState({ 
-                    postsToShow: this.state.postsToShow + 5, 
-                    loading: false 
-                })
-            }.bind(this), 800)
+        if (typeof window !== `undefined`) {
+            const distanceToBottom = document.documentElement.offsetHeight - (window.scrollY + window.innerHeight)
+            if (this.state.showingMore && distanceToBottom < 500) {
+                this.setState({loading: true})
+                setTimeout(function() {
+                    this.setState({ 
+                        postsToShow: this.state.postsToShow + 5, 
+                        loading: false 
+                    })
+                }.bind(this), 800)
+            }
         }
+        
         this.ticking = false
     }
 
@@ -172,13 +175,13 @@ class ResearchPage extends Component {
     }
 
     componentDidMount() {
-        window.addEventListener(`scroll`, this.handleScroll)
+        document.addEventListener(`scroll`, this.handleScroll)
         console.log(this.state.postsToShow)
     }
 
     componentWillUnmount() {
-        window.removeEventListener(`scroll`, this.handleScroll)
-        window.postsToShow = this.state.postsToShow
+        document.removeEventListener(`scroll`, this.handleScroll)
+        document.postsToShow = this.state.postsToShow
         
     }
     
