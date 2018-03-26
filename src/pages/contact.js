@@ -7,7 +7,7 @@ import PageAltContent from '../components/PageAltContent'
 import PageCTA from '../components/PageCTA'
 import PageBriefings from '../components/PageBriefings'
 import ReactMapGL, {Marker} from 'react-map-gl'
-import 'mapbox-gl/dist/mapbox-gl.css'
+// import 'mapbox-gl/dist/mapbox-gl.css'
 
 import hero_page from '../images/hero_page_2.jpg'
 
