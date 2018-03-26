@@ -39,7 +39,11 @@
 .page-cta {
     background-color: $lighter-green;
     padding: $gutter*1.5 $mobile-gutter - 10;
-    text-align: center;
+
+    img {
+        margin-top: -20px;
+    }
+
     p {
         font-size: 28px;
         line-height: 45px;

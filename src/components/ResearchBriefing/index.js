@@ -9,9 +9,9 @@ const ResearchBriefing = (props) => (
         
         {props.title ? (
             <h2>
-                <Link to={props.link} className='post-title'>
+                <a href={props.link} className='post-title'>
                     {props.title}
-                </Link>
+                </a>
             </h2>
         ) : ('')}
         <p>{props.copy}</p>

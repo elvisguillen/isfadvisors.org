@@ -65,9 +65,16 @@ const IndexPage = ({transition}) => (
     
     <section className='cta text-center'>
       <Container>
-        <p>
-          Learn more about our <Link to='/services#pageAltContent'>areas of expertise</Link> & industry-leading <Link to='/research'>research</Link> or current <Link to='/careers'>job openings.</Link> You can also <Link to='/contact'>contact us</Link> or sign up for our <Link to='/contact'>newsletter.</Link>
-        </p>
+        <Row>
+          <Col xs='12' lg='2'>
+            <img className='img-fluid' src='/images/footer-icon.png' />
+          </Col>
+          <Col xs='12' lg='10'>
+            <p className='text-left'>
+              Learn more about our <Link to='/services#pageAltContent'>areas of expertise</Link> & industry-leading <Link to='/research'>research</Link> or current <Link to='/careers'>job openings.</Link> You can also <Link to='/contact'>contact us</Link> or sign up for our <Link to='/contact'>newsletter.</Link>
+            </p>
+          </Col>
+        </Row>
       </Container>
     </section>
     

@@ -30,6 +30,7 @@ const Header = (logo) => (
 
             <div className='main-nav-wrapper'>
               <Link to='/contact' className='nav-item float-lg-left' activeClassName="active">Contact</Link>
+              <Link id='careers' to='/careers' className='sub-nav-item float-lg-left' activeClassName="active">Careers</Link>
             </div>
             
         </Col>

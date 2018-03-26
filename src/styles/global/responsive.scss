@@ -48,6 +48,8 @@
         }
     }
 
+    
+
     .background-span-blue {
         padding: 7px $gutter/2;
     }
@@ -88,6 +90,30 @@
                         
                         .sub-nav-item {
                             padding-left: 44px;
+                        }
+                    }
+
+                    .sub-nav-item {
+                        &#team {
+                            padding-right: 50px;
+                            padding-left: 56px;
+                        }
+                        &#portfolio {
+                            padding-left: 25px;
+                            padding-right: 17px;
+                        }
+                        &#briefings {
+                            padding-left: 23px;
+                            padding-right: 25px;
+                        }
+                        &#careers {
+                            padding-left: 30px;
+                            padding-right: 32px;
+                        }
+                        &#research {
+                            bottom: -92px;
+                            padding-left: 45px;
+                            padding-right: 45px;
                         }
                     }
 
@@ -135,6 +161,11 @@
         }
     }
     
+    .hero {
+        span {
+            font-size: 36px;
+        }
+    }
     .bm-menu-wrap {
         width: 40%!important;
     }
@@ -201,16 +232,20 @@
                 
                 .sub-nav-item {
                     &#team {
-                        padding-left: 66px;
-                        padding-right: 69px;
+                        padding-left: 66px!important;
+                        padding-right: 69px!important;
                     }
                     &#portfolio {
-                        padding-left: 36px;
-                        padding-right: 36px;
+                        padding-left: 36px!important;
+                        padding-right: 36px!important;
                     }
                     &#briefings {
-                        padding-left: 39px;
-                        padding-right: 38px;
+                        padding-left: 39px!important;
+                        padding-right: 38px!important;
+                    }
+                    &#careers {
+                        padding-left: 47px!important;
+                        padding-right: 46px!important;
                     }
                     &#research {
                         bottom: -92px;
@@ -266,6 +301,20 @@
     .case-studies {
         .overlay {
             padding: $gutter * 2 395px;
+        }
+    }
+}
+
+@media (min-width: 1199px) and (max-height: 720px) {
+    .background-span-blue, .hero span, .rural-farmers span {
+        font-size: 34px;
+    }
+}
+
+@media (min-width: 1200px) and (max-height: 750px) {
+    .hero {
+        span {
+            font-size: 34px!important;
         }
     }
 }

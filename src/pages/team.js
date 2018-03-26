@@ -11,6 +11,54 @@ import team_matt from '../images/Matthew_Shakhovsky.jpg'
 
 import hero_page from '../images/hero_page.jpg'
 
+const Team = [
+    {
+        name: 'Matt Shakhovskoy',
+        title: 'Executive Director',
+        img: '/images/team/Matt.jpg'
+    },
+    {
+        name: 'Dan Zook',
+        title: 'Director of Investments',
+        img: '/images/team/Dan.jpg'
+    },
+    {
+        name: 'Tom Carroll',
+        title: 'Senior Advisor and Founder',
+        img: '/images/team/Tom.jpg'
+    },
+    {
+        name: 'Craig Courtney',
+        title: 'Senior Advisor',
+        img: '/images/team/Craig.jpg'
+    },
+    {
+        name: 'Elizabeth Lara',
+        title: 'Senior Manager',
+        img: '/images/team/Liz.jpg'
+    },
+    {
+        name: 'Romit Mehta',
+        title: 'Manager',
+        img: '/images/team/Martin.jpg'
+    },
+    {
+        name: 'Martin Slawek',
+        title: 'Manager',
+        img: '/images/team/Martin.jpg'
+    },
+    {
+        name: 'Sarah Wallace Beatty',
+        title: 'Communications Manager',
+        img: '/images/team/Sarah.jpg'
+    },
+    {
+        name: 'Malia Bachesta Eley',
+        title: 'Communications Associate',
+        img: '/images/team/Malia.jpg'
+    },
+]
+
 const TeamPage = ({transition}) => (
   <div style={transition && transition.style}>
     <PageHero heroImage={hero_page}>
@@ -29,68 +77,18 @@ const TeamPage = ({transition}) => (
 
     <PageAltContent title='Team'>
         <Row>
-            <TeamMember 
-                thumbnail={
-                    <img className='img-fluid' src={team_matt} />
-                }
-                name='Matt Shakhovskoy'
-                title='Executive Director' />
-            
-            <TeamMember 
-                thumbnail={
-                    <img className='img-fluid' src={team_matt} />
-                }
-                name='Matt Shakhovskoy'
-                title='Executive Director' />
-            
-            <TeamMember 
-                thumbnail={
-                    <img className='img-fluid' src={team_matt} />
-                }
-                name='Matt Shakhovskoy'
-                title='Executive Director' />
-            
-            <TeamMember 
-                thumbnail={
-                    <img className='img-fluid' src={team_matt} />
-                }
-                name='Matt Shakhovskoy'
-                title='Executive Director' />
-            
-            <TeamMember 
-                thumbnail={
-                    <img className='img-fluid' src={team_matt} />
-                }
-                name='Matt Shakhovskoy'
-                title='Executive Director' />
-            
-            <TeamMember 
-                thumbnail={
-                    <img className='img-fluid' src={team_matt} />
-                }
-                name='Matt Shakhovskoy'
-                title='Executive Director' />
-            
-            <TeamMember 
-                thumbnail={
-                    <img className='img-fluid' src={team_matt} />
-                }
-                name='Matt Shakhovskoy'
-                title='Executive Director' />
-            
-            <TeamMember 
-                thumbnail={
-                    <img className='img-fluid' src={team_matt} />
-                }
-                name='Matt Shakhovskoy'
-                title='Executive Director' />
-            
-            <TeamMember 
-                thumbnail={
-                    <img className='img-fluid' src={team_matt} />
-                }
-                name='Matt Shakhovskoy'
-                title='Executive Director' />
+            {Team.map((member, i) => {
+                return (    
+                    <TeamMember 
+                        key={i}
+                        thumbnail={
+                            <img className='img-fluid' src={member.img} />
+                        }
+                        link={member.name.replace(/\s+/g, '-').toLowerCase()}
+                        name={member.name}
+                        title={member.title} />
+                )
+            })}
         </Row>
         
         

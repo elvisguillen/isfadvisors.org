@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Link from 'gatsby-link'
 import { Container, Row, Col, Card, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap'
@@ -18,13 +19,14 @@ const SingleTeamPage = ({transition}) => (
 
     <PageAltContent title='Team'>
         <Col xs='12' md='6' lg='4'>
-            <img className='img-fluid' src={team_matt} />
+            <img className='img-fluid' src='/images/team/Sarah.jpg' />
         </Col>
         <Col className='text-left team-right' xs='12' lg={{size: 6, offset: 1}} xl={{size: 6}}>
-            <h3>Matt Shakhovskoy</h3>
-            <h4 className='subtitle'>Executive Director</h4>
-            <p>Matt Shakhovskoy is the Executive Director of the Initiative for Smallholder Finance, a multi-donor effort designed to demonstrate how specific products and services can expand the reach of financing for smallholder farmers. Over the past ten years Matt has worked in the areas of private equity and development advisory for a number of leading organizations including Agis Investments, Dalberg, and Deloitte. Over this time Matt has been involved in over 60 projects in 25 countries working with partners such as the Gates Foundation, the World Bank, USAID, MTN, and the G8.</p>
-            <p>Matt holds a MSc in Sustainable Development from the University of London and Bachelors of Business and Economics from the University of Queensland.</p>
+            <h3>Sara Wallace Beatty</h3>
+            <h4 className='subtitle'>Communications Manager</h4>
+            <p>Sara Wallace Beatty is Communications Manager for the Global Development Incubator, which houses ISF. She leads communications efforts for GDI and the initiatives and social enterprises across GDI’s focus areas. Sara oversees the publication of ISF's briefing notes and liaises with partners and stakeholders.</p>
+            <p>Before joining GDI, Sara supported communications at Dalberg. Sara has also worked at journalism outlets including Media Matters for America, Philadelphia Magazine, and the Olive Press in Andalucía, Spain.</p>
+            <p>She holds a BA in Sociology from Princeton University.</p>
         </Col>
     </PageAltContent>
 
