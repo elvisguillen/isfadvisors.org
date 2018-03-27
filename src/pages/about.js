@@ -4,7 +4,7 @@ import { Container, Row, Col, Card, CardText, CardBody, CardTitle, CardSubtitle 
 import PageHero from '../components/PageHero'
 import PageContent from '../components/PageContent'
 import PageAltContent from '../components/PageAltContent'
-import MediaCoverage from '../components/MediaCoverage'
+// import MediaCoverage from '../components/MediaCoverage'
 import PageCTA from '../components/PageCTA'
 
 import hero_page from '../images/hero_page.jpg'
@@ -34,7 +34,7 @@ const AboutPage = ({transition}) => (
 
     <PageAltContent title='Media Coverage'>
 
-        <MediaCoverage/>
+        {/* <MediaCoverage/> */}
       
     </PageAltContent>
 

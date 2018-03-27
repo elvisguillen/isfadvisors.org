@@ -209,7 +209,7 @@ class ResearchPage extends Component {
                     }
                     right={
                         <div>
-                            <h3>ISF’s role as an intermediary and advisory group that facilitates partnerships is informed by the landmark research published in <a className='underline' href='/'>Inflection Point</a>. </h3>
+                            <h3>ISF’s role as an intermediary and advisory group that facilitates partnerships is informed by the landmark research published in <a className='underline' href='https://www.raflearning.org/post/inflection-point-unlocking-growth-era-farmer-finance'>Inflection Point</a>. </h3>
                             <p>By understanding the broader ecosystem around smallholder finance and rural enterprises, ISF identifies specific roles and leverage points for stakeholders at all stages of growth and development throughout the smallholder ecosystem. </p>
                         </div>
                     } 
@@ -220,7 +220,7 @@ class ResearchPage extends Component {
                         <h4 className='subtitle'>State of the Sector</h4>
                         
                         <h2>
-                            <a href={props.link} className='post-title'>
+                            <a href="https://www.raflearning.org/post/inflection-point-unlocking-growth-era-farmer-finance" className='post-title'>
                                 Inflection Point: Unlocking growth in the era of farmer finance
                             </a>
                         </h2>

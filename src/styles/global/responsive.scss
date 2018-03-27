@@ -9,6 +9,14 @@
             }
         }
     }
+    .hero {
+        h1 {
+            span {
+                font-size: 24px;
+            }
+        }
+    }
+    
 
     .background-span-blue {
         font-size: 28px;
@@ -20,6 +28,7 @@
 @include media-breakpoint-up(md) { 
 
     .bm-menu {
+        padding: $gutter 1.5em 0;
         .menu-item-wrapper {
             margin-bottom: 26px;
 
@@ -32,7 +41,73 @@
             }
         }
     }
+    
+    .hero {
+        h1 {
+            span {
+                font-size: 40px;
+            }
+        }
+    }
+    
+    .rural-farmers {
+        padding: $gutter*2+20 0px;
+        .container {
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+        .rural-farmers-reasons {
+            padding: $mobile-gutter*2;
+            .reason {
+                padding: 0px 50px;
+                margin-bottom: 40px;
+                &::after {
+                    // position: absolute;
+                    // right: -15px;
+                    // top: 80px;
+                }
+            }
+        }
+    }
 
+    // PAGES
+
+    .page-hero {
+        padding: $gutter $gutter/2 - 20px;
+
+        h1 {
+            line-height: 1.8;
+        }
+
+    }
+
+    .page-content {
+        h3 {
+            font-size: 28px;
+        }
+    }
+
+    .page-cta {
+        p {
+            font-size: 28px;
+        }
+    }
+
+    .research-page {
+        .rural-farmers-reasons {
+            padding: $gutter $gutter+30;
+
+            h2 {
+                font-size: 32px;
+                margin-bottom: 30px;
+                line-height: 1.8;
+            }
+
+            p {
+                font-size: 24px;
+            }
+        }
+    }
 }
 @include media-breakpoint-up(lg) {
     .hero {
@@ -48,6 +123,30 @@
         }
     }
 
+    .bm-menu {
+        padding: 40px 1.5em 0;
+    }
+    .rural-farmers {
+        padding: $gutter*2+20 0px;
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .rural-farmers-reasons {
+            .reason {
+                padding: 40px 30px;
+                &::after {
+                    position: absolute;
+                    right: -15px;
+                    top: 80px;
+                }
+            }
+        }
+        
+    }
+    
+    
     
 
     .background-span-blue {
@@ -64,6 +163,12 @@
             &:first-of-type {
             margin-top: 0px;
             }
+        }
+    }
+
+    .page-cta {
+        .col-lg-9 {
+            margin-left: $gutter;
         }
     }
 
@@ -123,24 +228,23 @@
             }
         }
     }
+    
+    .cta {
+        .col-lg-9 {
+            margin-left: $gutter;
+        }
 
+        p {
+            font-size: 28px;
+            line-height: 65px;
+        }
+    }
     .intro {
         padding: $gutter*2 0px;
         height: 620px;
     }
 
-    .rural-farmers {
-        padding: $gutter*2+20 0px;
-
-        .reason {
-            padding: 40px 50px;
-            &::after {
-                position: absolute;
-                right: -15px;
-                top: 80px;
-            }
-        }
-    }
+    
 
     .case-studies {
         .overlay {
@@ -197,6 +301,7 @@
         margin-top: 0px;
     }
 }
+
 @include media-breakpoint-up(xl) { 
     
 
@@ -209,6 +314,8 @@
                 width: 266px;
             }
         }
+
+        
 
         .main-nav {
             margin-top: 42px;
@@ -262,6 +369,10 @@
         }
     }
 
+    .bm-menu {
+        padding: $gutter - 20 1.5em 0;
+    }
+    
     .case-studies {
         .overlay {
             padding: $gutter + 30 300px;

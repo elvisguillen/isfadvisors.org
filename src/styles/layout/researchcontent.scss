@@ -82,6 +82,7 @@
     flex-direction: column;
     text-align: center;
     cursor: pointer;
+    
 
     a {
         display: block;
@@ -92,6 +93,8 @@
         text-align: center;
         transition: all 500ms ease-in-out;
     }
+
+
 
     h3 {
         font-family: $circular-black;
@@ -118,7 +121,16 @@
 
 .research-page {
     .rural-farmers-reasons {
-        padding: $gutter $gutter+30;
+        padding: 30px 30px;
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        p {
+            font-size: 18px;
+        }
     }
 }
 

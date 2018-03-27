@@ -22,15 +22,19 @@
         background-color: $brand-green;
         color: $tan;
     }
-
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     .rural-farmers-reasons {
         background-color: white;
-        padding: $mobile-gutter*2 $mobile-gutter*2;
+        padding: $mobile-gutter 41px;
         color: $brand-green;
-
+        
         .reason {
             margin-bottom: $mobile-gutter - 10px;
             padding: 0px 20px;
+            
             &::after {
                 content: '+';
                 color: $lighter-green;

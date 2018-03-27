@@ -165,8 +165,9 @@ footer {
   /* General sidebar styles */
   .bm-menu {
     background: $lighter-green;
-    padding: $gutter 1.5em 0;
+    padding: $gutter/2 1.5em 0;
     font-size: 1.15em;
+    overflow-y: hidden!important;
 
     .menu-item-wrapper {
       margin-bottom: 20px;

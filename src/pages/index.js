@@ -10,7 +10,7 @@ const IndexPage = ({transition}) => (
   <div style={transition && transition.style}>
     <section className='hero'>
       <Container>
-        <h1 className='text-center'><span>We transform rural economies by delivering partnerships and investment structures that promote financial inclusion for rural enterprises and smallholder farmers.</span></h1>
+        <h1 className='text-center'><span>We're elevating rural enterprises by delivering partnerships and investment structures that promote financial inclusion for smallholders and rural economies.</span></h1>
       </Container>
     </section>
 
@@ -66,10 +66,10 @@ const IndexPage = ({transition}) => (
     <section className='cta text-center'>
       <Container>
         <Row>
-          <Col xs='12' lg='2'>
+          <Col xs='12' md='2' lg='2'>
             <img className='img-fluid' src='/images/footer-icon.png' />
           </Col>
-          <Col xs='12' lg='9'>
+          <Col xs='12' md='10' lg='9'>
             <p className='text-left'>
               Learn more about our <Link to='/services#pageAltContent'>areas of expertise</Link> & industry-leading <Link to='/research'>research</Link> or current <Link to='/careers'>job openings.</Link> You can also <Link to='/contact'>contact us</Link> or sign up for our <Link to='/contact'>newsletter.</Link>
             </p>

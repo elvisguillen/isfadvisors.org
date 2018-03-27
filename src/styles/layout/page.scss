@@ -2,11 +2,15 @@
     background: url('../images/hero_page.jpg');
     background-size: cover;
     height: auto;
-    padding: $gutter $gutter/2 - 20px;
+    padding: $gutter - 40 $gutter/2 - 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 28px;
+
+    h1 {
+        line-height: 1.5;
+    }
 }
 
 .page-content {
@@ -27,6 +31,7 @@
         font-family: $circular-book;
         margin-bottom: $gutter/2;
         margin-top: -15px;
+        font-size: 24px;
     }
 
     .post {
@@ -45,11 +50,11 @@
     }
 
     .col-lg-9 {
-        margin-left: $gutter;
+        margin-left: 0px;
     }
 
     p {
-        font-size: 28px;
+        font-size: 24px;
         line-height: 45px;
         color: white;
 
