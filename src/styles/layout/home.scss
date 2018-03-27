@@ -6,7 +6,9 @@
     background: url('../images/hero.jpg') no-repeat;
     background-size: cover;
     padding: $mobile-gutter;
-
+    display: flex;
+    align-items: center;
+    
     .container {
         padding-left: 0px;
         padding-right: 0px;
