@@ -68,6 +68,7 @@ export default class TemplateWrapper extends Component {
 
                 <div className='menu-item-wrapper'>
                   <Link onClick={() => this.closeMenu()} className='menu-item' to='/contact'>Contact</Link>
+                  <Link onClick={() => this.closeMenu()} className='sub-menu-item' to='/careers'>Careers</Link>
                 </div>
 
               </Col>

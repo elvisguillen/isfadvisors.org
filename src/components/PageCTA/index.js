@@ -8,7 +8,7 @@ const PageHero = (props) => (
           <Col xs='12' lg='2'>
             <img className='img-fluid' src='/images/footer-icon.png' />
           </Col>
-          <Col xs='12' lg='10'>
+          <Col xs='12' lg={{size: 9}}>
             {props.children}
           </Col>
         </Row>

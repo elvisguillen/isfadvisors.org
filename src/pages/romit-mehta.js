@@ -18,7 +18,7 @@ const SingleTeamPage = ({transition}) => (
 
     <PageAltContent title='Team'>
         <Col xs='12' md='6' lg='4'>
-            <img className='img-fluid' src='/images/team/Martin.jpg' />
+            <img className='img-fluid' src='/images/team/Placeholder.jpg' />
         </Col>
         <Col className='text-left team-right' xs='12' lg={{size: 6, offset: 1}} xl={{size: 6}}>
             <h3>Romit Mehta</h3>

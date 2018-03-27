@@ -38,14 +38,14 @@ const Team = [
         img: '/images/team/Liz.jpg'
     },
     {
-        name: 'Romit Mehta',
+        name: 'Martin Slawek',
         title: 'Manager',
         img: '/images/team/Martin.jpg'
     },
     {
-        name: 'Martin Slawek',
+        name: 'Romit Mehta',
         title: 'Manager',
-        img: '/images/team/Martin.jpg'
+        img: '/images/team/Placeholder.jpg'
     },
     {
         name: 'Sarah Wallace Beatty',

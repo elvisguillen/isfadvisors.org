@@ -69,7 +69,7 @@ const IndexPage = ({transition}) => (
           <Col xs='12' lg='2'>
             <img className='img-fluid' src='/images/footer-icon.png' />
           </Col>
-          <Col xs='12' lg='10'>
+          <Col xs='12' lg='9'>
             <p className='text-left'>
               Learn more about our <Link to='/services#pageAltContent'>areas of expertise</Link> & industry-leading <Link to='/research'>research</Link> or current <Link to='/careers'>job openings.</Link> You can also <Link to='/contact'>contact us</Link> or sign up for our <Link to='/contact'>newsletter.</Link>
             </p>

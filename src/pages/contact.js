@@ -6,11 +6,185 @@ import PageContent from '../components/PageContent'
 import PageAltContent from '../components/PageAltContent'
 import PageCTA from '../components/PageCTA'
 import PageBriefings from '../components/PageBriefings'
-import ReactMapGL, {Marker} from 'react-map-gl'
+// import ReactMapGL, {Marker} from 'react-map-gl'
 // import 'mapbox-gl/dist/mapbox-gl.css'
 
-import hero_page from '../images/hero_page_2.jpg'
+import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 
+import hero_page from '../images/hero_page_2.jpg'
+const mapStyling = [
+    {
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#f5f5f5"
+        }
+      ]
+    },
+    {
+      "elementType": "labels.icon",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#616161"
+        }
+      ]
+    },
+    {
+      "elementType": "labels.text.stroke",
+      "stylers": [
+        {
+          "color": "#f5f5f5"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative.land_parcel",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#bdbdbd"
+        }
+      ]
+    },
+    {
+      "featureType": "poi",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#eeeeee"
+        }
+      ]
+    },
+    {
+      "featureType": "poi",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#757575"
+        }
+      ]
+    },
+    {
+      "featureType": "poi.park",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#e5e5e5"
+        }
+      ]
+    },
+    {
+      "featureType": "poi.park",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#9e9e9e"
+        }
+      ]
+    },
+    {
+      "featureType": "road",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#ffffff"
+        }
+      ]
+    },
+    {
+      "featureType": "road.arterial",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#757575"
+        }
+      ]
+    },
+    {
+      "featureType": "road.highway",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#dadada"
+        }
+      ]
+    },
+    {
+      "featureType": "road.highway",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#616161"
+        }
+      ]
+    },
+    {
+      "featureType": "road.local",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#9e9e9e"
+        }
+      ]
+    },
+    {
+      "featureType": "transit.line",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#e5e5e5"
+        }
+      ]
+    },
+    {
+      "featureType": "transit.station",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#eeeeee"
+        }
+      ]
+    },
+    {
+      "featureType": "water",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#c9c9c9"
+        }
+      ]
+    },
+    {
+      "featureType": "water",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#9e9e9e"
+        }
+      ]
+    }
+  ]
+
+const MyMapComponent = withScriptjs(withGoogleMap((props) =>
+  <GoogleMap
+    defaultZoom={2}
+    defaultCenter={{ lat: 15.523703, lng: -32.957323 }}
+    defaultOptions={{ styles: mapStyling }}
+  >
+    {props.isMarkerShown && <Marker position={{ lat: 38.900981 , lng: -77.042613 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: -1.291003, lng: 36.783546 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 40.744696, lng: -73.984908 }} />}
+  </GoogleMap>
+))
+  
 export default class ContactPage extends Component {
 
     state = {
@@ -19,7 +193,7 @@ export default class ContactPage extends Component {
             height: 600,
             latitude: 25.48802,
             longitude: -42.82354,
-            zoom: 1,
+            zoom: 2,
         }
     };
 
@@ -116,15 +290,21 @@ export default class ContactPage extends Component {
 
                 <PageAltContent title='Get In Touch'>
                     <Col className='d-none d-md-block' xs='12' lg={{size: 6}} xl={{size: 6}}>
-                        <ReactMapGL
+                        {/* <ReactMapGL
                             {...this.state.viewport}
-                            scrollZoom={false}
-                            zoom={1}
+                            scrollZoom={true}
                             mapboxApiAccessToken={'pk.eyJ1IjoiZWx2aXNndWlsbGVuIiwiYSI6ImNqYTA1NGhpeTZkZTcycXBnZ3d1dWNpeXcifQ.n0kMRqsxDE7t89k4qGuLxg'}
                             onViewportChange={(viewport) => this.setState({viewport})} >
                             { locations.map(this._renderMarker) }
-                            {/* { mainLocation.map(this._renderBrandMarker) } */}
-                        </ReactMapGL>
+                            { mainLocation.map(this._renderBrandMarker) }
+                        </ReactMapGL> */}
+                        <MyMapComponent
+                            isMarkerShown
+                            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoS-eQ29giI8OO_1vvcLet-FYc2e2feVw&v=3.exp&libraries=geometry,drawing,places"
+                            loadingElement={<div style={{ height: `100%` }} />}
+                            containerElement={<div style={{ height: `600px` }} />}
+                            mapElement={<div style={{ height: `100%` }} />}
+                        />
                         
                     </Col>
                     <Col className='text-left' xs='12' lg={{size: 5, offset: 1}}>
@@ -133,9 +313,11 @@ export default class ContactPage extends Component {
                             subtitle='Nairobi'
                             copy={
                                 <div>
-                                    <p>1000 F Street NW Unit 890
-                                    Washington, D.C.<br />
-                                    202.202.2002</p>
+                                    <p>6th Floor, Galana Plaza<br />
+                                    Galana Road, Kilimani (office), <br />
+                                    P.O. Box 100657<br />
+                                    Nairobi 00101 (postal)<br />
+                                    Kenya</p>
                                 </div>
                             } />
                         
@@ -143,9 +325,9 @@ export default class ContactPage extends Component {
                             subtitle='Washington D.C.'
                             copy={
                                 <div>
-                                    <p>1000 F Street NW Unit 890
-                                    Washington, D.C. <br />
-                                    202.202.2002</p>
+                                    <p>1634 I Street NW, Suite 300<br />
+                                    Washington, DC 20006<br />
+                                    </p>
                                 </div>
                             } />
                         
@@ -153,9 +335,9 @@ export default class ContactPage extends Component {
                             subtitle='New York'
                             copy={
                                 <div>
-                                    <p>1000 3rd Street
-                                    Unit 890 New York, NY 121212 <br />
-                                    202.202.2002</p>
+                                     <p>99 Madison Avenue,<br />
+                                    New York, NY 10016<br />
+                                    </p>
                                 </div>
                             } />
                     </Col>

@@ -39,6 +39,13 @@ a.underline {
   color: $black;
   border-bottom: 2px solid $black;
   padding-bottom: 2px;
+  padding: 0px 4px 2px 4px;
+  &:hover {
+      transition: 0.2s ease-in-out;
+      box-shadow: inset 0 -40px 0 #F3E84C;
+      color: $black;
+      border-color: #F3E84C;
+  }
 }
 
 
@@ -132,9 +139,7 @@ footer {
     height: 35px;
     right: 31px;
     top: 31px;
-
-    background-color: $tan;
-    border: 5px solid $tan;
+    border: 5px solid transparent;
   }
   
   /* Color/shape of burger icon bars */

@@ -209,13 +209,23 @@ class ResearchPage extends Component {
                     }
                     right={
                         <div>
-                            <h3>ISF’s role as an intermediary and advisory group that facilitates partnerships is informed by the landmark research published in Inflection Point. </h3>
+                            <h3>ISF’s role as an intermediary and advisory group that facilitates partnerships is informed by the landmark research published in <a className='underline' href='/'>Inflection Point</a>. </h3>
                             <p>By understanding the broader ecosystem around smallholder finance and rural enterprises, ISF identifies specific roles and leverage points for stakeholders at all stages of growth and development throughout the smallholder ecosystem. </p>
                         </div>
                     } 
                 />
                 <PageAltContent title='Our Research'>
-                    
+                    <Col xs='12' className='post research-briefing'>
+            
+                        <h4 className='subtitle'>State of the Sector</h4>
+                        
+                        <h2>
+                            <a href={props.link} className='post-title'>
+                                Inflection Point: Unlocking growth in the era of farmer finance
+                            </a>
+                        </h2>
+                        <p>Inflection Point suggests that while current activities to expand financial inclusion are not sufficient to meet smallholder demand, concerted efforts around customer centricity, progressive partnerships, and smart subsidy have the potential to change the sector’s growth trajectory to better serve the world’s smallholder farmers.</p>
+                    </Col>
                         {chunk(researchData.slice(0, this.state.postsToShow), 5).map((chunk, i) =>  {
                             return (
                                 <div key={i} id={`chunk-${i}`}>
