@@ -19,6 +19,7 @@ const SingleTeamPage = ({transition}) => (
     <PageAltContent title='Team'>
         <Col xs='12' md='6' lg='4'>
             <img className='img-fluid' src='/images/team/Craig.jpg' />
+            <Link to='/research'><button>Back</button></Link>
         </Col>
         <Col className='text-left team-right' xs='12' lg={{size: 6, offset: 1}} xl={{size: 6}}>
             <h3>Craig Courtney</h3>

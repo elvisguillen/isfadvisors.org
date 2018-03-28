@@ -9,7 +9,7 @@ const ResearchBriefing = (props) => (
         
         {props.title ? (
             <h2>
-                <a href={props.link} className='post-title'>
+                <a href={props.link} target='_blank' className='post-title'>
                     {props.title}
                 </a>
             </h2>

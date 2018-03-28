@@ -223,7 +223,10 @@ export default class ContactPage extends Component {
 
                 <PageContent
                     left={
-                        <Link to='/careers'><button>Careers</button></Link>
+                        <div>
+                          <Link to='/careers'><button>Careers</button></Link>
+                          <Link to='/contact-form'><button className='border-top-none'>Contact</button></Link>
+                        </div>
                     } 
                     right={
                         <div>
@@ -308,7 +311,7 @@ export default class ContactPage extends Component {
                         
                     </Col>
                     <Col className='text-left' xs='12' lg={{size: 5, offset: 1}}>
-                        <h3>Questions? <Link className='underline' to='/'>Contact Us.</Link></h3>
+                        <h3>Questions? <Link className='underline' to='/contact-form'>Contact Us.</Link></h3>
                         <PageBriefings
                             subtitle='Nairobi'
                             copy={
@@ -326,8 +329,8 @@ export default class ContactPage extends Component {
                             subtitle='Washington D.C.'
                             copy={
                                 <div>
-                                    <p>1634 I Street NW, Suite 300<br />
-                                    Washington, DC 20006<br />
+                                    <p>1401 K Street NW Suite 900, <br />
+                                      Washington DC<br />
                                     
                                     </p>
                                 </div>

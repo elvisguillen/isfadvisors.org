@@ -14,6 +14,8 @@ import photo_case_studies3 from '../images/photo_case_studies3.jpg'
 import photo_case_studies4 from '../images/photo_case_studies4.jpg'
 import photo_case_studies5 from '../images/photo_case_studies5.jpg'
 import photo_case_studies6 from '../images/photo_case_studies6.jpg'
+import photo_case_studies7 from '../images/photo_case_studies7.jpg'
+import photo_case_studies8 from '../images/intro_photo.jpg'
 
 import hero_page from '../images/hero_page_2.jpg'
 
@@ -31,10 +33,10 @@ const PortfolioPage = ({transition}) => (
         <div>
             <Reveal effect='fadeInUp'>
                 <PageBriefings 
-                    image={photo_case_studies5}
+                    image={photo_case_studies2}
                     isLink={false}
-                    title='African coffee supply chain project'
-                    copy='ISF conducted a pre-feasibility study to explore pathways to smallholder coffee input finance in Tanzania and Uganda. ISF engaged with supply chain partners to identify key bottlenecks in the provision of pre-harvest credit, developed solutions to solve these bottlenecks, and offered insight into how industry partners and host government institutions can contribute to solutions.'
+                    title='Blended investment fund design and development'
+                    copy='ISF is advising a multi-lateral client on the design and development of a blended public and private debt investment fund focused on rural SMEs and smallholder producer organizations, with a supporting technical assistance facility to reduce investment risk.'
                 />
             </Reveal>
             <Reveal effect='fadeInUp'>
@@ -53,14 +55,7 @@ const PortfolioPage = ({transition}) => (
                     copy='ISF conducted a pre-feasibility study to explore pathways to smallholder coffee input finance in Tanzania and Uganda. ISF engaged with supply chain partners to identify key bottlenecks in the provision of pre-harvest credit, developed solutions to solve these bottlenecks, and offered insight into how industry partners and host government institutions can contribute to solutions.'
                 />
             </Reveal>
-            <Reveal effect='fadeInUp'>
-                <PageBriefings 
-                    image={photo_case_studies2}
-                    isLink={false}
-                    title='Blended investment fund design and development'
-                    copy='ISF is advising a multi-lateral client on the design and development of a blended public and private debt investment fund focused on rural SMEs and smallholder producer organizations, with a supporting technical assistance facility to reduce investment risk.'
-                />
-            </Reveal>
+            
             <Reveal effect='fadeInUp'>
                 <PageBriefings
                     image={photo_case_studies3}
@@ -75,6 +70,30 @@ const PortfolioPage = ({transition}) => (
                     isLink={false}
                     title='Global public-private partnership'
                     copy='ISF conducted a governance diagnostic of an alliance of public and private agricultural organizations who collectively seek to integrate over one million smallholders into structured offtake agreements. The diagnostic led to the establishment of a more formal management structure to grow the platform and ensure value addition for all involved parties.'
+                />
+            </Reveal>
+            <Reveal effect='fadeInUp'>
+                <PageBriefings
+                    image={photo_case_studies8} 
+                    isLink={false}
+                    title='Southeast Asia blended finance facility'
+                    copy='As an advisor to a Tropical Landscape Financing Facility (TLFF), ISF is identifying relevant rural finance investment pipeline and advising on an associated technical assistance grant facility. This blended finance facility provides 10-15 year debt to landscape rehabilitation projects, smallholder productivity, low carbon growth, and sustainable energy in Southeast Asia.'
+                />
+            </Reveal>
+            <Reveal effect='fadeInUp'>
+                <PageBriefings 
+                    image={photo_case_studies5}
+                    isLink={false}
+                    title='African coffee supply chain project'
+                    copy='ISF conducted a pre-feasibility study to explore pathways to smallholder coffee input finance in Tanzania and Uganda. ISF engaged with supply chain partners to identify key bottlenecks in the provision of pre-harvest credit, developed solutions to solve these bottlenecks, and offered insight into how industry partners and host government institutions can contribute to solutions.'
+                />
+            </Reveal>
+            <Reveal effect='fadeInUp'>
+                <PageBriefings
+                    image={photo_case_studies7} 
+                    isLink={false}
+                    title='Southeast Asian social enterprise growth plan'
+                    copy="ISF is advising a leading Southeast Asian social enterprise that provides farm advisory services, finance, and irrigation products to smallholder farmers as the institution positions itself for the next phase of growth. ISF's adivsory work includes setting a strategic growth framework, defining product and service integration, and charting a roadmap that incorporates a capital raise."
                 />
             </Reveal>
         </div>

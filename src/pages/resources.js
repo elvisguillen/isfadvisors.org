@@ -27,7 +27,7 @@ const ResourcesPage = ({transition}) => (
             <Reveal effect='fadeInUp'>
                 <PageBriefings
                     isLink={true}
-                    link='http://www.initiativeforsmallholderfinance.org/s/Direct-to-Farmer-Finance-Innovation-Spaces-Playbook-1.pdf'
+                    link='https://www.raflearning.org/post/direct-farmer-finance-innovation-spaces-playbook'
                     title='Direct-to-Farmer Finance Innovation Spaces Playbook'
                     copy='An interactive playbook from ISF discusses how innovation can help direct-to-farmer finance providers better serve farmers by addressing the challenges associated with direct-to-farmer lending.'
                 />
@@ -35,12 +35,12 @@ const ResourcesPage = ({transition}) => (
             <Reveal effect='fadeInUp'>
                 <PageBriefings 
                     isLink={true}
-                    link='http://www.raflearning.org/post/infographic-how-much-being-done-world%E2%80%99s-450-million-smallholder-farmers'
+                    link='https://www.raflearning.org/post/infographic-how-much-being-done-world%E2%80%99s-450-million-smallholder-farmers'
                     title='Infographic: How Much is Being Done for the World’s 450 Million Smallholder Farmers'
                     copy='Learn more about technical assistance for smallholder farmers — and what can be done to make it more effective — in this infographic.'
                 />
             </Reveal>
-            <Reveal effect='fadeInUp'>
+            {/* <Reveal effect='fadeInUp'>
                 <PageBriefings 
                     isLink={true}
                     link='https://vimeo.com/97773846'
@@ -55,11 +55,11 @@ const ResourcesPage = ({transition}) => (
                     title='Webinar Recording: Local Bank Financing for Smallholder Farmers'
                     copy='An overview of the market size and scope of local bank lending to smallholder farmers, along with an exploration of what is required for a healthy, competitive smallholder banking sector.'
                 />
-            </Reveal>
+            </Reveal> */}
             <Reveal effect='fadeInUp'>
                 <PageBriefings 
                     isLink={true}
-                    link='http://www.initiativeforsmallholderfinance.org/impact-and-risk-metrics'
+                    link='https://www.raflearning.org/post/resource-hub-impact-and-risk-metrics'
                     title='Resource Hub: Impact and Risk Metrics in Smallholder Finance'
                     copy='Various tools to make sense of the current landscape of smallholder finance impact and risk metrics, which is crowded with multiple units of analysis, target users, and objectives.'
                 />
