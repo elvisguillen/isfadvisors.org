@@ -15,7 +15,7 @@ const PageBriefings = (props) => (
             <h4 className='subtitle'>{props.subtitle}</h4>
         ) : ('')}
         {props.title ? (
-            <h3> 
+            <h3 className='bold'> 
                 {props.isLink === true ? (
                     <a href={props.link} target='_blank' className='post-title'>
                         {props.title}

@@ -17,6 +17,7 @@ module.exports = {
         respectDNT: true,
       },
     },
+    `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`
   ],
 };
