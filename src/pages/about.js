@@ -22,12 +22,12 @@ const AboutPage = ({transition}) => (
     right={
       <div>
         <h3>ISF is an advisory group committed to transforming rural economies by delivering partnerships and investment structures that promote financial inclusion for rural enterprises and smallholder farmers. Combining industry-leading research with hands-on technical expertise, ISF develops practical, profitable, and sustainable financial solutions.</h3>
-        <p>ISF is housed within the Global Development Incubator (GDI) and shares GDI’s commitment to building effective partnerships that make a significant and lasting impact. GDI is an organization that builds startups, incubates partnerships, and strengthens existing organizations for social impact around the world.</p>
+        <p>ISF is housed within the <a href='http://globaldevincubator.org' target='_blank' className='underline'>Global Development Incubator (GDI)</a> and shares GDI’s commitment to building effective partnerships that make a significant and lasting impact. GDI is an organization that builds startups, incubates partnerships, and strengthens existing organizations for social impact around the world.</p>
         <p>
-          ISF’s advisory committee consists of leading funders and practitioners in the rural financial inclusion space, specifically ANDE, Bill and Melinda Gates Foundation, Business Fights Poverty, CGAP, Citi Foundation, Ford Foundation, IDH, MasterCard Foundation, One Acre Fund, Root Capital, Skoll Foundation, Small Foundation, TechnoServe, and USAID. 
+          ISF’s advisory committee consists of leading funders and practitioners in the rural financial inclusion space, specifically the Bill and Melinda Gates Foundation, CGAP, Citi Foundation, Ford Foundation, IDH, Mastercard Foundation, One Acre Fund, Root Capital, Skoll Foundation, Small Foundation, Syngenta Foundation, TechnoServe, and USAID. 
         </p>
         <p>
-          ISF regularly co-sponsors research and publishes insights with the Rural and Agricultural Finance Learning Lab.
+          ISF regularly co-sponsors research and publishes insights with the <a href='http://www.raflearning.org' className='underline' target='_blank'>Mastercard Foundation Rural and Agricultural Finance Learning Lab</a>.
         </p>
       </div>
     } />

@@ -321,7 +321,6 @@ export default class ContactPage extends Component {
                                     P.O. Box 100657<br />
                                     Nairobi 00101 (postal)<br />
                                     Kenya</p>
-                                    <p>+254 727 370022</p>
                                 </div>
                             } />
                         
@@ -342,7 +341,6 @@ export default class ContactPage extends Component {
                                 <div>
                                      <p>99 Madison Avenue,<br />
                                     New York, NY 10016<br />
-                                    <p>(212) 867-4447</p>
                                     </p>
                                 </div>
                             } />

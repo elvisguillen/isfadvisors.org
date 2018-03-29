@@ -17,6 +17,13 @@ import hero_page from '../images/hero_page_2.jpg'
 
 const researchData = [
     {
+        id: '16',
+        category: 'Capital Advisors',
+        link: 'https://www.raflearning.org/post/getting-smarter-on-subsidy-the-role-grant-funding-smallholder-finance',
+        title: 'Getting smarter on subsidy: The role of grant funding in smallholder finance',
+        copy: 'This briefing note aims to assess the role of grant funding in smallholder finance and understand how it can be used to unlock financing for millions of smallholders.'
+    },
+    {
         id: '15',
         category: 'Capital Providers',
         link: 'https://www.raflearning.org/post/fund-management-and-inclusive-agribusiness-global-perspective',

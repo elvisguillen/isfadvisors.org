@@ -48,11 +48,6 @@ const Team = [
         img: '/images/team/Placeholder.jpg'
     },
     {
-        name: 'Sarah Wallace Beatty',
-        title: 'Communications Manager',
-        img: '/images/team/Sarah.jpg'
-    },
-    {
         name: 'Malia Bachesta Eley',
         title: 'Communications Associate',
         img: '/images/team/Malia.jpg'

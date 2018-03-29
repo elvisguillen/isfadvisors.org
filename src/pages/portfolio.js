@@ -36,7 +36,7 @@ const PortfolioPage = ({transition}) => (
                     image={photo_case_studies2}
                     isLink={false}
                     title='Blended investment fund design and development'
-                    copy='ISF is advising a multi-lateral client on the design and development of a blended public and private debt investment fund focused on rural SMEs and smallholder producer organizations, with a supporting technical assistance facility to reduce investment risk.'
+                    copy='ISF advised a multi-lateral client on the design and development of a blended public and private debt investment fund focused on rural SMEs and smallholder producer organizations, with a supporting technical assistance facility to reduce investment risk.'
                 />
             </Reveal>
             <Reveal effect='fadeInUp'>

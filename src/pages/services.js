@@ -21,9 +21,9 @@ const ServicesPage = ({transition}) => (
       } 
       right={
         <div>
-        <h3>ISF’s primary role is to act as a design catalyst. The emphasis is on mobilizing additional financing for rural enterprises and seeding replication of innovative models.</h3>
-        <p>ISF has completed projects with a wide variety of public and private sector partners, including Airtel, Bill and Melinda Gates Foundation, Council on Smallholder Agricultural Finance, Dalberg Global Development Advisors, Esoko, IDH Sustainable Trade Initiative, International Fund for Agricultural Development (IFAD), KfW/DEG, Komaza, MIX Market, Opportunity International, Partners in Food Solutions, Rabobank, Rockefeller Foundation, TechnoServe, USAID, Vodacom, World Cocoa Foundation, and World Food Programme. </p>
-        <p>Serving this market requires multiple organizations working together to deliver a suite of services that mitigate risk and reduce the cost of delivery. However, market actors frequently lack the capacity, dedicated resources, or incentive to focus on the development of these structures until there is a refined business concept, an engaged set of investors, and complementary partners interested in moving forward. Moreover, even with the right set of partners engaged, rural finance is inherently risky and complex, which means investors tend to focus on larger or easier deals in sectors such as manufacturing, infrastructure, and housing. Wider adoption of blended finance models – the use of grant and concessional funding to mobilize private capital and make investments more financially viable – is essential to responding to the funding needs of rural enterprises.</p>
+          <h3>The ISF’s primary role is to act as a "design catalyst." The emphasis is on mobilizing additional financing for rural enterprises and seeding replication of innovative models.</h3>
+          <p>ISF works with public and private investors to develop new financial and partnership structures that can drive capital to rural clients and transform their economies. This typically includes a combination of partnership development and enterprise growth strategy while layering in financial inclusion and investment structuring expertise.</p>
+          <p>ISF’s team includes management consultants from leading strategy firms and financial experts from investment banking and impact investing backgrounds. Armed with industry leading research on rural financial inclusion, ISF is uniquely positioned to respond to the specific needs of rural enterprises and financial institutions in order to build more profitable, equitable, and sustainable rural economies.</p>
         </div>
       } />
     
@@ -43,8 +43,7 @@ const ServicesPage = ({transition}) => (
     <PageContent id='no-left-content'
       right={
         <div>
-          <h3>ISF’s primary role is to act as a design catalyst. The emphasis is on mobilizing additional financing for rural enterprises and seeding replication of innovative models. </h3>
-          <p>ISF works with public and private investors to develop new financial and partnership structures that can drive capital to rural clients and transform their economies. This typically includes a combination of partnership development and enterprise growth strategy while layering in financial inclusion and investment structuring expertise. ISF’s team includes management consultants from leading strategy firms and financial experts from investment banking and impact investing backgrounds. Armed with industry leading research on rural financial inclusion, ISF is uniquely positioned to respond to the specific needs of rural enterprises and financial institutions in order to build more profitable, equitable, and sustainable rural economies.</p>
+          <p>ISF has completed projects with a wide variety of public and private sector partners, including Airtel, Bill and Melinda Gates Foundation, Council on Smallholder Agricultural Finance, Dalberg Advisors, Esoko, IDH Sustainable Trade Initiative, International Fund for Agricultural Development (IFAD), KfW/DEG, Komaza, MIX Market, Opportunity International, Partners in Food Solutions, Rabobank, Rockefeller Foundation, TechnoServe, USAID, Vodacom, World Cocoa Foundation, and World Food Programme.</p>
         </div>
       } />
 

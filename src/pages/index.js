@@ -10,7 +10,7 @@ const IndexPage = ({transition}) => (
   <div style={transition && transition.style}>
     <section className='hero'>
       <Container>
-        <h1 className='text-center'><span>We're elevating rural enterprises by delivering partnerships and investment structures that promote financial inclusion for smallholders and rural economies.</span></h1>
+        <h1 className='text-center'><span>We elevate rural enterprises by delivering partnerships and investment structures that promote financial inclusion for smallholders and rural economies.</span></h1>
       </Container>
     </section>
 
@@ -49,7 +49,7 @@ const IndexPage = ({transition}) => (
               </Col>
               <Col xs='12' lg='4' className='reason'>
                 <h2>Poverty Alleviation</h2>
-                <p>for the 2 billion dependant on agriculturefor income</p>
+                <p>for the 2 billion dependant on agriculture for income</p>
               </Col>
               <Col xs='12' lg='4' className='reason'>
                 <h2>Land Preservation</h2>

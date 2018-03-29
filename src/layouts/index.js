@@ -37,8 +37,8 @@ export default class TemplateWrapper extends Component {
         <Helmet
           title="ISF Advisors"
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'ISF is an advisory group committed to transforming rural economies by delivering partnerships and investment structures that promote financial inclusion for rural enterprises and smallholder farmers.' },
+            { name: 'keywords', content: 'ISF, Initiative for Smallholder Finance, Advisory, Smallholder Farmers, Financial Investment' },
           ]}
         />
         
@@ -57,13 +57,12 @@ export default class TemplateWrapper extends Component {
 
                 <div className='menu-item-wrapper'>
                   <Link onClick={() => this.closeMenu()} className='menu-item' to='/services'>Services</Link>
-                  <Link onClick={() => this.closeMenu()} className='sub-menu-item' to='/team'>Portfolio</Link>
+                  <Link onClick={() => this.closeMenu()} className='sub-menu-item' to='/portfolio'>Portfolio</Link>
                 </div>
 
                 <div className='menu-item-wrapper'>
                   <Link onClick={() => this.closeMenu()} className='menu-item' to='/research'>Research</Link>
-                  <Link onClick={() => this.closeMenu()} className='sub-menu-item' to='/team'>Briefings</Link>
-                  <Link onClick={() => this.closeMenu()} className='sub-menu-item' to='/team'>Resources</Link>
+                  <Link onClick={() => this.closeMenu()} className='sub-menu-item' to='/resources'>Resources</Link>
                 </div>
 
                 <div className='menu-item-wrapper'>
