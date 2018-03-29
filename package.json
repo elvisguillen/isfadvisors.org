@@ -5,6 +5,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "bootstrap": "^4.0.0",
+    "caniuse-db": "^1.0.30000821",
     "gatsby": "^1.9.204",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-google-analytics": "^1.0.25",
