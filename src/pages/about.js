@@ -32,11 +32,11 @@ const AboutPage = ({transition}) => (
       </div>
     } />
 
-    {/* <PageAltContent title='Media Coverage'>
+    <PageAltContent title='Media Coverage'>
 
         <MediaCoverage/>
       
-    </PageAltContent> */}
+    </PageAltContent>
 
     <PageCTA>
       <div>

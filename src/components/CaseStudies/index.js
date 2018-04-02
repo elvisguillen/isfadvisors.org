@@ -6,12 +6,14 @@ import CaseStudiesLeft from '../../components/CaseStudiesLeft'
 import CaseStudiesRight from '../../components/CaseStudiesRight'
 import CaseStudy from '../../components/CaseStudy'
 
-import photo_case_studies from '../../images/photo_case_studies.jpg'
-import photo_case_studies2 from '../../images/photo_case_studies2.jpg'
-import photo_case_studies3 from '../../images/photo_case_studies3.jpg'
-import photo_case_studies4 from '../../images/photo_case_studies4.jpg'
-import photo_case_studies5 from '../../images/photo_case_studies5.jpg'
-import photo_case_studies6 from '../../images/photo_case_studies6.jpg'
+import photo_case_studies from '../../images/case_studies/image_case_study_1.jpg'
+import photo_case_studies2 from '../../images/case_studies/image_case_study_2.jpg'
+import photo_case_studies3 from '../../images/case_studies/image_case_study_3.jpg'
+import photo_case_studies4 from '../../images/case_studies/image_case_study_4.jpg'
+import photo_case_studies5 from '../../images/case_studies/image_case_study_5.jpg'
+import photo_case_studies6 from '../../images/case_studies/image_case_study_6.jpg'
+import photo_case_studies7 from '../../images/case_studies/image_case_study_7.jpg'
+import photo_case_studies8 from '../../images/case_studies/image_case_study_8.jpg'
 
 const CaseStudies = (props) => {
     return (
@@ -30,7 +32,7 @@ const CaseStudies = (props) => {
                         </CaseStudy>
                         <CaseStudy
                             title='African coffee supply chain project' 
-                            thumbnail={photo_case_studies5}
+                            thumbnail={photo_case_studies6}
                             size='small-height'
                             location='left-contained'
                             panel='left'
@@ -44,7 +46,7 @@ const CaseStudies = (props) => {
                     <CaseStudiesRight>
                         <CaseStudy
                             title='West African Commodity Alliance' 
-                            thumbnail={photo_case_studies}
+                            thumbnail={photo_case_studies3}
                             size='tall-height'
                             panel='left'
                             linkClassName='West African Commodity Alliance'>
@@ -53,7 +55,7 @@ const CaseStudies = (props) => {
                         </CaseStudy>
                         <CaseStudy
                             title='Sustainable supply chain financing facility' 
-                            thumbnail={photo_case_studies6}
+                            thumbnail={photo_case_studies7}
                             location='right-contained'
                             size='small-height'
                             panel='left'
