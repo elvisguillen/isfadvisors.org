@@ -17,7 +17,6 @@ import photo_case_studies8 from '../../images/case_studies/image_case_study_8.jp
 
 const CaseStudies = (props) => {
     return (
-        <Reveal effect='fadeInUp'>
             <section className='case-studies d-none d-md-block' >
                 <Row>
                     <CaseStudiesLeft>
@@ -85,7 +84,6 @@ const CaseStudies = (props) => {
                     </CaseStudiesRight>
                 </Row>
             </section>
-        </Reveal>
     )
 }
 

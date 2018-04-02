@@ -132,10 +132,7 @@
 
             img {
                 object-fit: cover;
-                height: -webkit-calc(100vh);
-                height:    -moz-calc(100vh);
-                height:         calc(100vh);
-                width: 100%;
+                max-width: 100%;
                 transition: all 500ms ease-in-out;
             }
         }
@@ -170,13 +167,14 @@
             opacity: 0;
 
             h3 {
-                font-family: $circular-book!important;
+                font-family: $circular-air;
                 padding-top: 0px;
                 margin-top: -20px;
+                font-size: 18px;
+                text-transform: uppercase;
             }
     
             h2 {
-                text-transform: uppercase;
                 letter-spacing: 1px;
             }
         }
