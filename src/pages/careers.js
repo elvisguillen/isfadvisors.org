@@ -19,6 +19,9 @@ const CareerPage = ({transition}) => (
     </PageHero>
 
     <PageContent
+      left={
+        <Link to='/contact'><button>Back</button></Link>
+      }
       right={
         <div>
           <h3>We are always looking for committed candidates with the right experience to help us achieve our vision. If you don't see the job opening you're looking for, reach out to us at jobs@ISFadvisors.org.</h3>

@@ -35,7 +35,7 @@ const IndexPage = ({transition}) => (
     <section className='rural-farmers text-center'>
       <Container>
         <Reveal effect='fadeInUp'>
-        <Col lg={{size: 6, offset: 3}} >
+        <Col lg={{size: 8, offset: 2}} >
           <h1 className='text-center'><span>Why rural enterprise and smallholder farmers?</span></h1>
         </Col>
         </Reveal>

@@ -5,7 +5,7 @@ import Reveal from 'react-reveal/Reveal'
 const PageAltContent = (props) => (
     <section id='pageAltContent' className='rural-farmers'>
       <Container>
-        <Col lg={{size: 6, offset: 3}} >
+        <Col lg={{size: 8, offset: 2}} >
           <Reveal effect='fadeInUp'>
             <h1 className='text-center'><span>{props.title}</span></h1>
           </Reveal>

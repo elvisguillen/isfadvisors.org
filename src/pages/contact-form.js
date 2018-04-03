@@ -15,6 +15,9 @@ const ContactFormPage = ({transition}) => (
     </PageHero>
 
     <PageContent
+      left={
+        <Link to='/contact'><button>Back</button></Link>
+      }
       right={
         <div>
           <h3>Feel free to contact us if you have any questions.</h3>

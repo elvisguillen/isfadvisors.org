@@ -12,7 +12,7 @@ import hero_page from '../images/hero_page.jpg'
 const ServicesPage = ({transition}) => (
   <div style={transition && transition.style}>
     <PageHero heroImage={hero_page}>
-      We build partnerships and financial structures that can drive capital to rural enterprises.
+      We build partnerships and <br/>financial structures that can drive capital to rural enterprises.
     </PageHero>
 
     <PageContent 

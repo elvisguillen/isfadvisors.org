@@ -12,7 +12,7 @@ import hero_page from '../images/hero_page.jpg'
 const AboutPage = ({transition}) => (
   <div style={transition && transition.style}>
     <PageHero heroImage={hero_page}>
-      We're on a mission to transform rural economies.
+      We're on a mission to <br/>transform rural economies.
     </PageHero>
 
     <PageContent
@@ -32,11 +32,11 @@ const AboutPage = ({transition}) => (
       </div>
     } />
 
-    <PageAltContent title='Media Coverage'>
+    {/* <PageAltContent title='Media Coverage'>
 
         <MediaCoverage/>
       
-    </PageAltContent>
+    </PageAltContent> */}
 
     <PageCTA>
       <div>
