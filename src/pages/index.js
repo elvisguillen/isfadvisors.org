@@ -44,7 +44,7 @@ const IndexPage = ({transition}) => (
         <Reveal effect='fadeInUp'>
           <Row>
               <Col xs='12' lg='4' className='reason'>
-                <h2>Food Security</h2>
+                <h2>Food <br/>Security</h2>
                 <p>for a world population of 9 billion by 2050</p>
               </Col>
               <Col xs='12' lg='4' className='reason'>
