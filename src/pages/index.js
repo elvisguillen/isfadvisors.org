@@ -32,7 +32,7 @@ const IndexPage = ({transition}) => (
       </Container>
     </section>
     <img className='img-fluid d-lg-none' src={intro_photo} />
-    <section className='rural-farmers text-center'>
+    <section className='rural-farmers home text-center'>
       <Container>
         <Reveal effect='fadeInUp'>
         <Col lg={{size: 8, offset: 2}} >

@@ -124,7 +124,11 @@
         padding: 40px 1.5em 0;
     }
     .rural-farmers {
-        padding: $gutter*2+20 0px;
+
+        &.home {
+            padding: $gutter*2+20 0px;
+        }
+        padding: 61px 0px 176px 0px;
         .container {
             padding-left: 15px;
             padding-right: 15px;
@@ -140,6 +144,8 @@
                 }
             }
         }
+
+
         
     }
     
