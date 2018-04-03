@@ -57,9 +57,11 @@ export default class CaseStudiesRight extends Component {
                     <div className={ 
                         this.state.isRightOpen ? 'open-left overlay overlay-left' : 'overlay overlay-left'
                         }>
-                            <a onClick={this.handleCloseClick} className='close'>X</a>
-                            <h1>Featured Case Study:</h1>
-                            {this.renderActiveTabContent()}
+                            <div className='overlay-inner'>
+                                <a onClick={this.handleCloseClick} className='close'>X</a>
+                                <h1>Featured Case Study:</h1>
+                                {this.renderActiveTabContent()}
+                            </div>
                     </div>  
                     <Row>
                         {this.renderChildrenWithTabsApiAsProps()}
