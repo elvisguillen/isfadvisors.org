@@ -132,7 +132,8 @@
         .case-study-image {
             display: flex;
             transition: all 500ms ease-in-out;
-
+            height: 100%;
+            
             img {
                 object-fit: cover;
                 max-width: 100%;
