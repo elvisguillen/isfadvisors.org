@@ -17,13 +17,13 @@ const IndexPage = ({transition}) => (
     <section className='intro'>
       <Container>
         <Row>
-          <Col xs='12' lg={{size: 4, offset: 0}} >
+          <Col xs='12' lg={{size: 6, offset: 0}} >
             <Reveal effect='fadeInUp'>
               <p>Combining industry leading research with hands-on technical expertise, ISF develops practical, profitable, and sustainable financial solutions.</p>
               <Link to='/services'><button>Services</button></Link>
             </Reveal>
           </Col>
-          <Col xs='12' lg={{size: 6, offset: 2}} xl={{size: 5, offset: 2}} className='intro_photo'>
+          <Col xs='12' lg={{size: 6, offset: 0}} xl={{size: 5, offset: 1}} className='intro_photo'>
             <Reveal effect='fadeInUp'>
               <img className='img-fluid d-none d-lg-block' src={intro_photo} />
             </Reveal>
