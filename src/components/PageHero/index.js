@@ -8,7 +8,7 @@ const PageHero = (props) => {
   return ( 
     <section style={heroStyle} className='page-hero'>
       <Col xs='12' lg={{size: 6}}>
-        <h1 className='text-center'><span className='background-span-blue'>{props.children}</span></h1>
+        <h1 className='text-center'>{props.children}</h1>
       </Col>
     </section>
     )

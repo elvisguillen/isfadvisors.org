@@ -197,14 +197,14 @@ class ResearchPage extends Component {
     }
     render () {
         let props = this.props;
-
+        const page = props.data.wordpressPage
         return (
             
             
             <div style={props.transition && props.transition.style} className='research-page'>
                 
                 <PageHero heroImage={hero_page}>
-                    Our research and deep sector understanding informs our advisory and implementation work.
+                    <span className='background-span-blue' dangerouslySetInnerHTML={{ __html: page.acf.page_header_copy}} />
                 </PageHero>
 
                 <PageContent
@@ -214,10 +214,7 @@ class ResearchPage extends Component {
                         </div>
                     }
                     right={
-                        <div>
-                            <h3>ISF’s role as an intermediary and advisory group that facilitates partnerships is informed by the landmark research published in <a className='underline' href='https://www.raflearning.org/post/inflection-point-unlocking-growth-era-farmer-finance'>Inflection Point</a>. </h3>
-                            <p>By understanding the broader ecosystem around smallholder finance and rural enterprises, ISF identifies specific roles and leverage points for stakeholders at all stages of growth and development throughout the smallholder ecosystem. </p>
-                        </div>
+                        <div dangerouslySetInnerHTML={{__html: page.content}}/>
                     } 
                 />
                 <PageAltContent title='Our Research'>
@@ -284,3 +281,22 @@ class ResearchPage extends Component {
 }
 
 export default ResearchPage
+
+export const researchPageQuery = graphql`
+  query ResearchPageQuery {
+    wordpressPage(slug: { eq: "research" }) {
+        id
+        slug
+        title
+        content
+        excerpt
+        date
+        modified
+        acf {
+            intro_copy
+            main_copy
+            page_header_copy
+        }
+    }  
+  }
+`

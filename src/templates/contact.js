@@ -184,7 +184,7 @@ const MyMapComponent = withScriptjs(withGoogleMap((props) =>
     {props.isMarkerShown && <Marker position={{ lat: 40.744696, lng: -73.984908 }} />}
   </GoogleMap>
 ))
-  
+
 export default class ContactPage extends Component {
 
     state = {
@@ -214,11 +214,13 @@ export default class ContactPage extends Component {
             {"name":"Lafayette (LAFY)","coordinates":[-1.29207,36.82195]},
         ]
 
+        const page = this.props.data.wordpressPage
+
         return (
         
             <div style={this.props.transition && this.props.transition.style} className='contact-page'>
                 <PageHero heroImage={hero_page}>
-                    Interested in learning more? <br></br> Send us a note and we'll get in touch.
+                  <span className='background-span-blue' dangerouslySetInnerHTML={{ __html: page.acf.page_header_copy}} />
                 </PageHero>
 
                 <PageContent
@@ -357,3 +359,23 @@ export default class ContactPage extends Component {
         )
     }
 }
+
+export const contactPageQuery = graphql`
+  query ContactPageQuery {
+    wordpressPage(slug: { eq: "contact" }) {
+        id
+        slug
+        title
+        content
+        excerpt
+        date
+        modified
+        acf {
+            intro_copy
+            main_copy
+            page_header_copy
+        }
+    }
+   
+  }
+`
