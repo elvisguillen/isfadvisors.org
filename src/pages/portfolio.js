@@ -22,7 +22,7 @@ import hero_page from '../images/hero_page_2.jpg'
 const PortfolioPage = ({transition}) => (
   <div style={transition && transition.style}>
     <PageHero heroImage={hero_page}>
-        Whether facilitating partnerships or building financial structures, our work takes many forms.
+        <span className='background-span-blue'>Whether facilitating partnerships or building financial structures, our work takes many forms.</span>
     </PageHero>
 
     <PageContent

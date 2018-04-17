@@ -57,7 +57,7 @@ const Team = [
 const TeamPage = ({transition}) => (
   <div style={transition && transition.style}>
     <PageHero heroImage={hero_page}>
-        We're a team committed to transforming ideas into action.
+        <span className='background-span-blue'>We're a team committed to transforming ideas into action.</span>
     </PageHero>
 
     <PageContent

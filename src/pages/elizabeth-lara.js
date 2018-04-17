@@ -13,7 +13,7 @@ import hero_page from '../images/hero_page.jpg'
 const SingleTeamPage = ({transition}) => (
   <div style={transition && transition.style} className='team-member-page'>
     <PageHero heroImage={hero_page}>
-      We're a team committed to transforming ideas into action.
+      <span className='background-span-blue'>We're a team committed to transforming ideas into action.</span>
     </PageHero>
 
     <PageAltContent title='Team'>

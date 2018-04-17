@@ -11,7 +11,7 @@ import hero_page from '../images/hero_page_2.jpg'
 const ContactFormPage = ({transition}) => (
   <div style={transition && transition.style}>
     <PageHero heroImage={hero_page}>
-        Interested in learning more? <br></br> Send us a note and we'll get in touch.
+        <span className='background-span-blue'>Interested in learning more? <br></br> Send us a note and we'll get in touch.</span>
     </PageHero>
 
     <PageContent

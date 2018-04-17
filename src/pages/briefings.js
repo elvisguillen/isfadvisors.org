@@ -13,7 +13,7 @@ import hero_page from '../images/hero_page_2.jpg'
 const BriefingsPage = ({transition}) => (
   <div style={transition && transition.style}>
     <PageHero heroImage={hero_page}>
-      Briefings
+        <span className='background-span-blue'>Briefings</span>
     </PageHero>
 
     <PageContent

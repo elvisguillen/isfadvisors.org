@@ -15,7 +15,7 @@ import hero_page from '../images/hero_page_2.jpg'
 const CareerPage = ({transition}) => (
   <div style={transition && transition.style}>
     <PageHero heroImage={hero_page}>
-      Like what you see? Join our team to help us transform rural economies
+      <span className='background-span-blue'>Like what you see? Join our team to help us transform rural economies</span>
     </PageHero>
 
     <PageContent

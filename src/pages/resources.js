@@ -13,7 +13,7 @@ import hero_page from '../images/hero_page_2.jpg'
 const ResourcesPage = ({transition}) => (
   <div style={transition && transition.style}>
     <PageHero heroImage={hero_page}>
-      Resources
+        <span className='background-span-blue'>Resources</span>
     </PageHero>
 
     <PageContent
