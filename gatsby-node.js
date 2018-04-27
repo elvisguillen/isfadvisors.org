@@ -28,6 +28,49 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     if (result.errors) {
       return Promise.reject(result.errors)
     }
+    result.data.allWordpressPage.edges.forEach(({ node }) => {
+      createPage({
+        path: node.slug,
+        component: path.resolve(`src/templates/${String(node.slug)}.js`),
+        context: {} // additional data can be passed via context
+      })
+    })
+  })
+
+  .then(() => {
+    graphql(`
+    {
+      allWordpressWpTeam {
+        totalCount
+        edges {
+            node {
+                id
+                slug
+                
+            }
+        }
+      }
+    }
+  `).then(result => {
+    if (result.errors) {
+      return Promise.reject(result.errors)
+    }
+    result.data.allWordpressWpTeam.edges.forEach(({ node }) => {
+      createPage({
+        path: node.slug,
+        component: path.resolve(`src/templates/team-member.js`),
+        context: {
+          slug: node.slug
+        } // additional data can be passed via context
+      })
+    })
+  })
+})
+}
+
+
+
+
     // const categoryTemplate = path.resolve(`src/templates/categories.js`);
     // const tagsTemplate = path.resolve(`src/templates/tags.js`);
     // const authorTemplate = path.resolve(`src/templates/author.js`);
@@ -105,13 +148,3 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     //     }
     //   });
     // });
-    
-    result.data.allWordpressPage.edges.forEach(({ node }) => {
-      createPage({
-        path: node.slug,
-        component: path.resolve(`src/templates/${String(node.slug)}.js`),
-        context: {} // additional data can be passed via context
-      })
-    })
-  })
-}

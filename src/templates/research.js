@@ -198,6 +198,7 @@ class ResearchPage extends Component {
     render () {
         let props = this.props;
         const page = props.data.wordpressPage
+        const posts = props.data.allWordpressWpResearchBriefings
         return (
             
             
@@ -229,17 +230,19 @@ class ResearchPage extends Component {
                         </h2>
                         <p>Inflection Point suggests that while current activities to expand financial inclusion are not sufficient to meet smallholder demand, concerted efforts around customer centricity, progressive partnerships, and smart subsidy have the potential to change the sector’s growth trajectory to better serve the world’s smallholder farmers.</p>
                     </Col>
-                        {chunk(researchData.slice(0, this.state.postsToShow), 5).map((chunk, i) =>  {
+                        {chunk(posts.edges.slice(0, this.state.postsToShow), 5).map((chunk, i) =>  {
                             return (
                                 <div key={i} id={`chunk-${i}`}>
-                                    {chunk.map(research => (
+                                    {chunk.map(({node: research}) => (
                                         <Reveal key={research.id} effect='fadeInUp'>
                                             <ResearchBriefing 
-                                                id={research.id}
-                                                category={research.category}
+                                                id={research.acf.briefing_number}
+                                                category={research.acf.research_category}
                                                 title={research.title}
-                                                copy={research.copy}
-                                                link={research.link}
+                                                copy={
+                                                    <div dangerouslySetInnerHTML={{ __html: research.content}} />
+                                                }
+                                                link={research.acf.link}
                                             />
                                         </Reveal>
                                     ))}
@@ -297,6 +300,24 @@ export const researchPageQuery = graphql`
             main_copy
             page_header_copy
         }
-    }  
+    }
+    
+    allWordpressWpResearchBriefings(sort: { order: ASC, fields: [date] },) {
+        edges {
+            node{
+                id
+                slug
+                title
+                content
+                date
+                modified
+                acf{
+                    link
+                    research_category
+                    briefing_number
+                }
+            }
+        }
+    } 
   }
 `
