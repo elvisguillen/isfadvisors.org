@@ -314,7 +314,18 @@ export default class ContactPage extends Component {
                     </Col>
                     <Col className='text-left' xs='12' lg={{size: 5, offset: 1}}>
                         <h3>Questions? <Link className='underline' to='/contact-form'>Contact Us.</Link></h3>
-                        <PageBriefings
+                        
+                        {page.acf.locations.map((post, i) => (
+                          <PageBriefings
+                          key={i}
+                          subtitle={post.location}
+                          copy={
+                              <div dangerouslySetInnerHTML={{ __html: post.address}}/>
+                          } />
+                        ))}
+
+
+                        {/* <PageBriefings
                             subtitle='Nairobi'
                             copy={
                                 <div>
@@ -345,7 +356,7 @@ export default class ContactPage extends Component {
                                     New York, NY 10016<br />
                                     </p>
                                 </div>
-                            } />
+                            } /> */}
                     </Col>
                 </PageAltContent>
 
@@ -363,19 +374,20 @@ export default class ContactPage extends Component {
 export const contactPageQuery = graphql`
   query ContactPageQuery {
     wordpressPage(slug: { eq: "contact" }) {
-        id
-        slug
-        title
-        content
-        excerpt
-        date
-        modified
-        acf {
-            intro_copy
-            main_copy
-            page_header_copy
-        }
+      id
+      slug
+      title
+      content
+      excerpt
+      date
+      modified
+      acf {
+          page_header_copy
+          locations {
+            location
+            address
+          }
+      }
     }
-   
   }
 `
