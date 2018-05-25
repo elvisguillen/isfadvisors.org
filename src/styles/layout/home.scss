@@ -15,11 +15,37 @@
     }
 
     h1 {
-        line-height: 1.4;
+        line-height: 1.0;
     }
     
     span {
         @extend .background-span-blue;
+        font-size: 22px;
+    }
+}
+
+.scroll-button {
+    background: $light-blue url('../images/icon_scroll_arrow.png') no-repeat;   
+    width: 85px;
+    height: 55px;
+    background-size: 50px;
+    border: 8px solid $light-blue;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    animation: 1200ms ease-in-out 0s infinite normal both running spokeScrollBounce;
+
+    &:hover {
+        background: $tan url('../images/icon_scroll_arrow.png') no-repeat; 
+        background-position: center;
+        background-size: 50px;
+
+        border: 8px solid $tan;
+        animation-play-state: paused;
     }
 }
 
@@ -28,8 +54,8 @@
     padding: $mobile-gutter*2 $mobile-gutter - 10;
 
     p {
-        font-size: 28px;
-        line-height: 45px;
+        font-size: 20px;
+        line-height: 1.5;
     }
 
     .intro_photo {
@@ -196,8 +222,8 @@
     
     p {
 
-        font-size: 24px;
-        line-height: 50px;
+        font-size: 20px;
+        line-height: 36px;
 
         a {
             color: $black;

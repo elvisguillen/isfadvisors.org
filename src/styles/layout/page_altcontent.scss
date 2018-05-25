@@ -4,6 +4,7 @@
     
     h1 {
         margin-bottom: $mobile-gutter+20px;
+        line-height: 1 ;
     }
 
     h3 {
@@ -15,6 +16,15 @@
             margin-bottom: 10px;
         }
         
+        .member-thumbnail {
+            a {
+                display: flex;
+                height: 289px;
+                img {
+                    object-fit: cover;
+                }
+            }
+        }
     }
 
     span {
