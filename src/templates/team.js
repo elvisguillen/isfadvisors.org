@@ -85,7 +85,7 @@ class TeamPage extends Component {
                                 <TeamMember 
                                     key={i}
                                     thumbnail={
-                                        <img className='img-fluid' src={member.featured_media.source_url} />
+                                        <img className='img-fluid' src={member.featured_media.localFile.childImageSharp.resolutions.src} />
                                     }
                                     link={member.title.replace(/\s+/g, '-').toLowerCase()}
                                     name={member.title}
@@ -136,8 +136,14 @@ export const teamPageQuery = graphql`
                 content
                 date
                 modified
-              	featured_media {
-                  source_url
+                featured_media {
+                    localFile {
+                        childImageSharp {
+                            resolutions(width: 600, height: 600) {
+                                src
+                            }
+                        }
+                    }
                 }
                 acf {
                   job_title
