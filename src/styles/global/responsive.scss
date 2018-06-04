@@ -87,7 +87,7 @@
             padding-right: 45px;
         }
         .rural-farmers-reasons {
-            padding: $mobile-gutter*2;
+            padding: $mobile-gutter;
             .reason {
                 padding: 0px 50px;
                 &::after {
@@ -186,7 +186,7 @@
 
         .rural-farmers-reasons {
             .reason {
-                padding: 40px 30px;
+                padding: 20px 30px;
                 &::after {
                     position: absolute;
                     right: -15px;
@@ -322,7 +322,7 @@
     
     .hero {
         span {
-            font-size: 36px;
+            font-size: 30px;
         }
     }
     .bm-menu-wrap {
@@ -330,6 +330,7 @@
     }
 
     .page-hero {
+        height: 300px;
         padding: $gutter - 10px $gutter/2 - 20px;
         h1 {
             font-size: 40px;
@@ -446,15 +447,16 @@
         h1 {
             padding: 0px 127px;
             span {
-                font-size: 46px;
+                font-size: 42px;
             }
         }
     }
 
     .page-hero {
+        height: 300px;
         h1 {
             span {
-                font-size: 36px;
+                font-size: 30px;
             }
         }
     }
@@ -465,7 +467,7 @@
         }
         .rural-farmers-reasons {
             .reason {
-                padding: 40px 59px;
+                padding: 30px 59px;
             }
         }
     }
@@ -477,12 +479,30 @@
             padding: $gutter * 2 395px;
         }
     }
+
+    .hero {
+        h1 {
+            span {
+                font-size: 46px;
+            }
+        }
+    }
+
+    .page-hero {
+        height: 360px;
+        h1 {
+            span {
+                font-size: 36px!important;
+            }
+        }
+    }
 }
 
 @media (min-width: 800px) and (max-height: 720px) {
     .background-span-blue, .hero span, .rural-farmers span {
-        font-size: 41px!important;
+        font-size: 30px!important;
     }
+
 }
 
 // @media (min-width: 1200px) and (max-height: 772px) {

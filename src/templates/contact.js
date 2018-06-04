@@ -175,12 +175,12 @@ const mapStyling = [
 
 const MyMapComponent = withScriptjs(withGoogleMap((props) =>
   <GoogleMap
-    defaultZoom={2}
-    defaultCenter={{ lat: 15.523703, lng: -32.957323 }}
+    defaultZoom={5}
+    defaultCenter={{ lat: 41.04067043913954, lng: -74.27789324956996 }}
     defaultOptions={{ styles: mapStyling }}
   >
     {props.isMarkerShown && <Marker position={{ lat: 38.900981 , lng: -77.042613 }} />}
-    {props.isMarkerShown && <Marker position={{ lat: -1.291003, lng: 36.783546 }} />}
+    {/* {props.isMarkerShown && <Marker position={{ lat: -1.291003, lng: 36.783546 }} />} */}
     {props.isMarkerShown && <Marker position={{ lat: 40.744696, lng: -73.984908 }} />}
   </GoogleMap>
 ))
