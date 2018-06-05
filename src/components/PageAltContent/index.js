@@ -6,9 +6,13 @@ const PageAltContent = (props) => (
     <section id='pageAltContent' className='rural-farmers'>
       <Container>
         <Col lg={{size: 8, offset: 2}} >
-          <Reveal effect='fadeInUp'>
-            <h1 className='text-center'><span>{props.title}</span></h1>
-          </Reveal>
+        {props.title === false ? ''
+        : 
+        
+        <Reveal effect='fadeInUp'>
+          <h1 className='text-center'><span>{props.title}</span></h1>
+        </Reveal>
+        }
         </Col>
         <div className='rural-farmers-reasons'> 
           <Reveal effect='fadeInUp'>

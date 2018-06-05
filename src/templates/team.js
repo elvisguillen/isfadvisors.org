@@ -127,7 +127,7 @@ export const teamPageQuery = graphql`
         }
     }
     
-    allWordpressWpTeam(sort: { order: ASC, fields: [date] },) {
+    allWordpressWpTeam(sort: { order: ASC, fields: [acf___order] },) {
         edges {
             node{
                 id
@@ -147,6 +147,7 @@ export const teamPageQuery = graphql`
                 }
                 acf {
                   job_title
+                  order
                 }
             }
         }
