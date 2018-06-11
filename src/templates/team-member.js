@@ -14,10 +14,12 @@ import hero_page from '../images/hero_page.jpg'
 class SingleTeamPage extends Component {
   render() {
     const page = this.props.data.wordpressWpTeam
+    const pageContent = this.props.data.wordpressPage
+
     return (
       <div style={this.props.transition && this.props.transition.style} className='team-member-page'>
         <PageHero heroImage={hero_page}>
-          <span className='background-span-blue'>We're a team committed to transforming ideas into action.</span>
+          <span className='background-span-blue' dangerouslySetInnerHTML={{ __html: pageContent.acf.page_header_copy}} />
         </PageHero>
 
         <PageAltContent title='Team'>
@@ -51,6 +53,9 @@ SingleTeamPage.propTypes = {
 
 export const singleTeamPageQuery = graphql`
   query SingleTeamPageQuery($slug: String!) {
+
+    
+
     wordpressWpTeam(slug: { eq: $slug }) {
       id
       slug
@@ -69,6 +74,21 @@ export const singleTeamPageQuery = graphql`
       }
       acf {
        job_title 
+      }
+    }
+
+    wordpressPage(slug: { eq: "team" }) {
+      id
+      slug
+      title
+      content
+      excerpt
+      date
+      modified
+      acf {
+          intro_copy
+          main_copy
+          page_header_copy
       }
     }
   }
