@@ -1,13 +1,23 @@
-# gatsby-starter-default
-The default Gatsby starter
+# ISF Advisors - isfadvisors.org
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+This repo contains the source code and documentation powering isfadvisors.org, based on the Axel Framework.
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source, [Gatsby](https://www.gatsbyjs.org/) as a static site generator, and [Netlify](netlify.com) for continuous deployment, and CDN distribution.
+
+## Getting Started
+
+### Prerequisites
+
+* Node (I recommend using v8.2.0 or higher)
+* [Gatsby CLI](https://www.gatsbyjs.org/docs/)
+
+### Run Locally
+
+```sh
+git clone https://github.com/SpokeLLC/isfadvisors.org-test.git
+cd isfadvisors.org-test
+npm install
+gatsby develop
 ```
-gatsby new gatsby-example-site
-```
 
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+Site will run locally on localhost:8000
